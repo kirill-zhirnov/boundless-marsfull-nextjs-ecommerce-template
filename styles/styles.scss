@@ -1,7 +1,9 @@
 @import '~bootstrap';
+
 @import 'functions/stripUnits';
 @import 'mixins/swiperSlideHeight';
 @import 'mixins/fluidType';
+
 @import 'components/index';
 
-@import 'themes/sample/basic';
+@import 'themes/mars-full/index';

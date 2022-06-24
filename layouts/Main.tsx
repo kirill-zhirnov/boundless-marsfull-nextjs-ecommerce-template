@@ -47,12 +47,13 @@ export default function MainLayout({children, title, metaData, mainMenu, footerM
 				{noIndex && <meta name='robots' content='noindex' />}
 			</Head>
 			<AlertWidget />
-			<div className={clsx('page-layout page-layout_main sample-theme', {'page-layout_aside-opened': asideIsOpened})}>
+			<div className={clsx('page-layout page-layout_main mars-full-theme', {'page-layout_aside-opened': asideIsOpened})}>
 				<CallToOrder />
 				<Header />
 				{mainMenu && <HorizontalMenu menuList={mainMenu} />}
 				<main className='page-layout__main'>
-					{children}
+					content coming soon
+				{/*	{children}*/}
 				</main>
 				<Footer menuList={footerMenu}/>
 				<AsideBackdrop />
