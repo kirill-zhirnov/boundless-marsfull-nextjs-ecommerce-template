@@ -1,0 +1,148 @@
+$products-gutter: 10px !default;
+
+.products {
+	align-items: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 15px var(--bs-gutter-x, -0.75rem);
+	padding: 0;
+
+	&__item {
+		background: #fff;
+		border: 1px solid $front-products-border-color;
+		border-radius: 5px;
+		flex-shrink: 0;
+		margin: $products-gutter;
+		padding: 10px;
+		position: relative;
+		transition: all ease-in-out 0.35s;
+
+		width: calc((100% - (4 * #{$products-gutter})) / 2);
+
+		@include media-breakpoint-up(lg) {
+			width: calc((100% - (6 * #{$products-gutter})) / 3);
+		}
+
+		@include media-breakpoint-up(xl) {
+			width: calc((100% - (8 * #{$products-gutter})) / 4);
+		}
+
+		&:hover {
+			border-color: transparent;
+			box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+
+			.products__image {
+				.img {
+					img {
+						transform: scale(1.1);
+					}
+				}
+			}
+		}
+	}
+
+	&__item-wrapper {
+		align-items: stretch;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		justify-content: space-between;
+		text-align: center;
+	}
+
+	&__title {
+
+		flex-grow: 2;
+		font-size: 0.9rem;
+
+		margin: 30px 0 15px;
+		@include media-breakpoint-up(sm) {
+			font-size: 1.1rem;
+		}
+
+		a {
+			color: $front-text-color;
+			text-decoration: none;
+		}
+	}
+
+	&__image {
+		.img {
+			line-height: 0;
+
+			> span {
+				//might be it is not a good idea:
+				overflow: visible !important;
+			}
+
+			img {
+				height: auto;
+				transition: all ease-in-out 0.35s;
+				width: 100%;
+			}
+		}
+	}
+
+	&__offer {
+		margin: 0 0 15px;
+	}
+
+	&__to-cart {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		min-height: 38px;
+	}
+
+	&__price {
+		.from {
+			color: $text-muted;
+			display: inline-block;
+			font-size: 0.8rem;
+			margin: 0 5px;
+		}
+
+		.old {
+
+			color: $text-muted;
+			display: inline-block;
+			font-size: 0.85rem;
+			margin: 0 5px;
+
+			@include media-breakpoint-up(sm) {
+				font-size: 1rem;
+			}
+		}
+
+		.current {
+
+			display: inline-block;
+			font-size: 0.85rem;
+			font-weight: $front-font-weight-bold;
+			margin: 0 5px;
+
+			@include media-breakpoint-up(sm) {
+				font-size: 1rem;
+			}
+
+			&.has-old {
+				color: $front-highlighted-price-color;
+			}
+		}
+	}
+
+	.product__labels {
+		left: 10px;
+		position: absolute;
+		top: 10px;
+	}
+
+	.product__label {
+		border-radius: 4px;
+		margin: 0 0 6px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

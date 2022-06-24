@@ -1,0 +1,50 @@
+@import './product/labels';
+@import './product/gallery';
+@import './product/variantAndBuy';
+@import './product/attrs';
+
+.product-page {
+	&__hr {
+		border: 0;
+		border-top: 1px solid #eee;
+		height: 0;
+		margin: 30px 0;
+		opacity: 1;
+	}
+
+	&__description {
+		margin: 1.5rem 0;
+		max-width: 800px;
+	}
+
+	&__shipping-row {
+		align-items: center;
+		display: flex;
+		margin-bottom: 15px;
+	}
+
+	&__shipping-icon {
+		color: $theme-color;
+		margin-right: 15px;
+		text-align: center;
+		width: 28px;
+	}
+}
+
+.modal-price {
+	.prices {
+		margin-bottom: 0;
+
+		.price {
+			font-size: 18px;
+		}
+
+		&.with-old .price {
+			color: $front-highlighted-price-color;
+		}
+	}
+
+	.benefit-price span {
+		color: $front-highlighted-price-color;
+	}
+}
