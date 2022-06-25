@@ -2,8 +2,9 @@ import {formatMoney} from '../../lib/formatter';
 import Link from 'next/link';
 import {useCart} from '../../hooks/cart';
 import clsx from 'clsx';
+import {ReactNode} from 'react';
 
-export default function HeaderCart({className}: {className?: string}) {
+export default function HeaderCart({className, icon}: {className?: string, icon?: ReactNode}) {
 	const {total} = useCart();
 	const isEmpty = !total || !total.qty;
 	const isDoubleQty = (total?.qty && total?.qty > 9) ? true : false;
@@ -14,7 +15,7 @@ export default function HeaderCart({className}: {className?: string}) {
 				'cart-header_empty': isEmpty,
 				'cart-header_active': !isEmpty
 			}, className)}>
-				<span className={'cart-header__icon'} />
+				{icon ? icon : <span className={'cart-header__icon'} />}
 				<b className={clsx('cart-header__qty', {
 					'cart-header__qty_double': isDoubleQty
 				})}>{total?.qty ?? 0}</b>

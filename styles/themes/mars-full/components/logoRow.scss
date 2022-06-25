@@ -1,0 +1,77 @@
+.mars-logo-row {
+	&__container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		min-height: 100px;
+	}
+
+	&__logo-wrapper {
+		margin: 0 20px 0 0;
+	}
+
+	&__logo {
+		display: inline-block;
+		vertical-align: middle;
+		text-decoration: none;
+		margin: 0;
+
+		@include media-breakpoint-up(sm) {
+			//span {
+			//	font-size: 36px;
+			//}
+
+			img {
+				max-width: 300px;
+				//max-height: 180px;
+			}
+		}
+
+		span {
+			color: #000000;
+			white-space: nowrap;
+			font-family: 'FiraSans';
+			font-weight: 900;
+			font-size: 32px;
+
+			@include media-breakpoint-up(sm) {
+				font-size: 36px;
+			}
+		}
+
+		img {
+			display: inline-block;
+
+			max-width: 180px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+	}
+
+	.cart-header {
+		display: flex;
+
+		&__total {
+			display: none;
+		}
+
+		&__qty {
+			width: 50px;
+			height: 50px;
+			position: static;
+			border-radius: 0;
+			background: $front-mars-top-nav-bg;
+		}
+	}
+
+	&__cart-icon {
+		width: 50px;
+		height: 50px;
+		background: $theme-color;
+	}
+
+	&__hamburger {
+		display: none;
+	}
+}

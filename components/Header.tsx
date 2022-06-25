@@ -7,21 +7,14 @@ import {faBars} from '@fortawesome/free-solid-svg-icons/faBars';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {useAppDispatch} from '../hooks/redux';
 import {setIsOpened} from '../redux/reducers/asideMenu';
-import MarsTopNav from "./header/MarsTopNav";
+import MarsTopNav from './header/MarsTopNav';
+import MarsLogoRow from './header/MarsLogoRow';
 
-export default function Header({companyTitle}: {companyTitle?: string}) {
-	const dispatch = useAppDispatch();
-
-	const onHamburgerBtnClicked = (e: MouseEvent<HTMLButtonElement>) => {
-		e.preventDefault();
-		dispatch(setIsOpened(true));
-	};
-
-	const title = companyTitle || 'Your Company LLC.';
-
+export default function Header() {
 	return (
 		<header className='page-header'>
 			<MarsTopNav />
+			<MarsLogoRow />
 			{/*<div className='container'>*/}
 			{/*	<div className='page-header__content'>*/}
 			{/*		<div className='page-header__logo'>*/}

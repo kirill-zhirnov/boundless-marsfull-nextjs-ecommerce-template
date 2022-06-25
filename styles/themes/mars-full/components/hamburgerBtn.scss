@@ -1,0 +1,62 @@
+.hamburger-btn {
+	background-color: transparent;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 0;
+	padding: 9px 10px;
+	position: relative;
+
+	&:focus {
+		outline: 0;
+	}
+
+	&__bar {
+		background-color: #000;
+		border-radius: 1px;
+		display: block;
+		height: 2px;
+		width: 22px;
+
+		&.first-opened {
+			animation: hamburger-btn-toggle-first 0.5s forwards;
+			position: relative;
+			top: -4px;
+			transform: rotate(45deg);
+			transform-origin: left bottom;
+		}
+
+		&.middle-opened {
+			visibility: hidden;
+		}
+
+		&.last-opened {
+			animation: hamburger-btn-toggle-last 0.5s forwards;
+			transform: rotate(-45deg);
+			transform-origin: left top;
+		}
+	}
+
+	&__bar + .hamburger-btn__bar {
+		margin-top: 4px;
+	}
+
+	@keyframes hamburger-btn-toggle-first {
+		from {
+			transform: rotate(0deg);
+		}
+
+		to {
+			transform: rotate(45deg);
+		}
+	}
+
+	@keyframes hamburger-btn-toggle-last {
+		from {
+			transform: rotate(0deg);
+		}
+
+		to {
+			transform: rotate(-45deg);
+		}
+	}
+}
