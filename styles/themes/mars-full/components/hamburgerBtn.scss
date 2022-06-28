@@ -1,9 +1,11 @@
 .hamburger-btn {
-	background-color: transparent;
+	width: 50px;
+	height: 50px;
+	background-color: $theme-color;
 	background-image: none;
 	border: 1px solid transparent;
 	border-radius: 0;
-	padding: 9px 10px;
+	padding: 9px 13px;
 	position: relative;
 
 	&:focus {
@@ -11,16 +13,17 @@
 	}
 
 	&__bar {
-		background-color: #000;
-		border-radius: 1px;
+		background-color: $theme-contrast-color;
+		border-radius: 0;
 		display: block;
 		height: 2px;
 		width: 22px;
+		position: relative;
 
 		&.first-opened {
 			animation: hamburger-btn-toggle-first 0.5s forwards;
-			position: relative;
-			top: -4px;
+			top: -2px;
+			left: 2.5px;
 			transform: rotate(45deg);
 			transform-origin: left bottom;
 		}
@@ -30,9 +33,12 @@
 		}
 
 		&.last-opened {
+
 			animation: hamburger-btn-toggle-last 0.5s forwards;
 			transform: rotate(-45deg);
 			transform-origin: left top;
+			left: 2.5px;
+			top: 2px;
 		}
 	}
 

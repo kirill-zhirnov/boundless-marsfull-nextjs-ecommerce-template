@@ -50,6 +50,7 @@
 	}
 
 	.cart-header {
+		padding: 0;
 		display: flex;
 
 		&__total {
@@ -62,6 +63,16 @@
 			position: static;
 			border-radius: 0;
 			background: $front-mars-top-nav-bg;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			font-weight: 400;
+		}
+
+		&:hover {
+			.cart-header__qty {
+				background: $front-mars-top-nav-bg;
+			}
 		}
 	}
 
@@ -69,9 +80,22 @@
 		width: 50px;
 		height: 50px;
 		background: $theme-color;
+		color: $theme-contrast-color;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
 	}
 
 	&__hamburger {
-		display: none;
+		margin: 0 0 0 20px;
+
+		@include media-breakpoint-up(md) {
+			display: none;
+		}
+	}
+
+	&__at-right {
+		display: flex;
+		align-items: center;
 	}
 }
