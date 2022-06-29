@@ -18,43 +18,34 @@ export default function IndexPage({products, mainMenu, footerMenu}: InferGetServ
 	return (
 		<MainLayout mainMenu={mainMenu} footerMenu={footerMenu}>
 			<div className='container'>
-				<MainPageSlider />
-				<div className='row'>
-					<nav className='col-lg-3 d-none d-lg-block'>
-						{mainMenu && <VerticalMenu menuList={mainMenu} />}
-					</nav>
-					<div className='col-lg-9 col-md-12'>
-						<h1 className='page-heading page-heading_h1  page-heading_m-h1'>Boundless store</h1>
-						<ProductsList products={products} query={{}}/>
-					</div>
-				</div>
-				<div className='container'>
-					<h2 className='page-heading page-heading_h1  page-heading_m-h1'>Cover example:</h2>
-				</div>
+				{/*<MainPageSlider />*/}
+				<h1 className='page-heading page-heading_h1  page-heading_m-h1'>Boundless store</h1>
+				<ProductsList products={products} query={{}}/>
+				{/*<h2 className='page-heading page-heading_h1  page-heading_m-h1'>Cover example:</h2>*/}
 			</div>
-			<CoverTextInCenter
-				showChevronDown
-				img={bgImg.src}
-				imgPortrait={bgPortraitImg.src}
-				content={{
-					intro: 'Intro',
-					head: 'Main header',
-					subHead: 'subheader'
-				}}
-				shadow={{
-					opacity: 0.5,
-					backgroundColor: '#000'
-				}}
-				link={'http://google.com'}
-			/>
-			<div className='container'>
-				<h2 className='page-heading page-heading_h1  page-heading_m-h1'>Products carousel:</h2>
-				<ProductsSliderByQuery
-					query={{collection: ['main-page'], sort: 'in_collection'}}
-					title={'Collection title'}
-					wrapperClassName='page-block'
-				/>
-			</div>
+			{/*<CoverTextInCenter*/}
+			{/*	showChevronDown*/}
+			{/*	img={bgImg.src}*/}
+			{/*	imgPortrait={bgPortraitImg.src}*/}
+			{/*	content={{*/}
+			{/*		intro: 'Intro',*/}
+			{/*		head: 'Main header',*/}
+			{/*		subHead: 'subheader'*/}
+			{/*	}}*/}
+			{/*	shadow={{*/}
+			{/*		opacity: 0.5,*/}
+			{/*		backgroundColor: '#000'*/}
+			{/*	}}*/}
+			{/*	link={'http://google.com'}*/}
+			{/*/>*/}
+			{/*<div className='container'>*/}
+			{/*	<h2 className='page-heading page-heading_h1  page-heading_m-h1'>Products carousel:</h2>*/}
+			{/*	<ProductsSliderByQuery*/}
+			{/*		query={{collection: ['main-page'], sort: 'in_collection'}}*/}
+			{/*		title={'Collection title'}*/}
+			{/*		wrapperClassName='page-block'*/}
+			{/*	/>*/}
+			{/*</div>*/}
 		</MainLayout>
 	);
 }

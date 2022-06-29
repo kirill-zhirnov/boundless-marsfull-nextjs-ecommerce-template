@@ -9,6 +9,7 @@ import 'swiper/scss/pagination';
 import 'swiper/scss/scrollbar';
 import 'animate.css';
 
+import '@fontsource/fira-sans/900.css';
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';

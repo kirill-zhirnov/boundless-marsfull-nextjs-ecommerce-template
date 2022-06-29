@@ -52,8 +52,7 @@ export default function MainLayout({children, title, metaData, mainMenu, footerM
 				<Header />
 				{mainMenu && <HorizontalMenu menuList={mainMenu} />}
 				<main className='page-layout__main'>
-					content coming soon
-				{/*	{children}*/}
+					{children}
 				</main>
 				<Footer menuList={footerMenu}/>
 				<AsideBackdrop />

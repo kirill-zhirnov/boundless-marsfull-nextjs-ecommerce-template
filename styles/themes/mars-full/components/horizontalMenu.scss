@@ -1,0 +1,38 @@
+.horizontal-menu {
+	$root: &;
+
+	background: $front-h-menu-bg;
+
+	//border-bottom: $horizontal-menu-border;
+	//border-top: $horizontal-menu-border;
+
+	&__list {
+		display: flex;
+		margin: 0;
+		align-items: center;
+	}
+
+	&__root-element {
+		position: relative;
+	}
+
+	&__child-list {
+		background-color: $front-h-menu-child-bg;
+		position: absolute;
+		width: 220px;
+		z-index: 10;
+
+		&.animate__animated.animate__fadeInUp,
+		&.animate__animated.animate__fadeOut {
+			--animate-duration: 0.4s;
+		}
+	}
+
+	&.active {
+		color: red !important;
+	}
+
+	&.open {
+		color: green !important;
+	}
+}
