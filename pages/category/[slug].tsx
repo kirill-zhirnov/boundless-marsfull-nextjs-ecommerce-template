@@ -82,7 +82,12 @@ export default function CategoryPage({data}: InferGetServerSidePropsType<typeof 
 
 						{collection && <>
 							<CategoryControls params={productsQuery} onSort={onCollectionChange} onMobileShow={() => setShowModal(true)}/>
-							<ProductsList products={collection.products} query={productsQuery} categoryId={category.category_id} />
+							<ProductsList
+								products={collection.products}
+								query={productsQuery}
+								categoryId={category.category_id}
+								className={'products_in-category'}
+							/>
 							<Pagination pagination={collection.pagination} params={productsQuery} onChange={onCollectionChange} />
 						</>}
 						{category.text?.description_bottom && <div dangerouslySetInnerHTML={{__html: category.text.description_bottom}} />}

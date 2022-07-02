@@ -38,10 +38,13 @@ export default function ProductItem({product, query, categoryId}: IProductItemPr
 						</a>
 					</Link>
 				</h4>
-				<div className='products__offer'>
-					{product.price && <ProductPrice price={product.price} />}
+
+				<div className={'products__offer-row'}>
+					<div className='products__offer'>
+						{product.price && <ProductPrice price={product.price} />}
+					</div>
+					<Product2Cart product={product} />
 				</div>
-				<Product2Cart product={product} />
 			</div>
 			<ProductSchemaOrgMarkup product={product} />
 		</li>
@@ -53,14 +56,17 @@ function Product2Cart({product}: {product: IProduct}) {
 	const onAddToCart = () => dispatch(addItem2Cart(product.item_id, 1));
 
 	return (
-		<div className='products__to-cart'>
+		<div className={clsx('products__to-cart', {
+			'products__to-cart_in-stock': product.in_stock,
+			'products__to-cart_out-stock': !product.in_stock,
+		})}>
 			{product.in_stock
 				? <button
-					type='button'
-					className='btn btn-action btn-resp-size'
+					type={'button'}
+					className='products__to-cart-btn'
 					onClick={onAddToCart}
 				>
-					<FontAwesomeIcon icon={faCartPlus} /> Add to cart
+					<FontAwesomeIcon icon={faCartPlus} />
 				</button>
 				: <span className={'text-muted'}>Out of stock</span>
 			}

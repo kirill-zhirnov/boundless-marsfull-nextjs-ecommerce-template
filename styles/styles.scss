@@ -1,5 +1,8 @@
 @import '~bootstrap';
 
+$theme-color: #ee4a00;
+$front-products-border-color: #e6e6e6;
+
 @import 'functions/stripUnits';
 @import 'mixins/swiperSlideHeight';
 @import 'mixins/fluidType';

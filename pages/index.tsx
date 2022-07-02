@@ -38,14 +38,14 @@ export default function IndexPage({products, mainMenu, footerMenu}: InferGetServ
 			{/*	}}*/}
 			{/*	link={'http://google.com'}*/}
 			{/*/>*/}
-			{/*<div className='container'>*/}
-			{/*	<h2 className='page-heading page-heading_h1  page-heading_m-h1'>Products carousel:</h2>*/}
-			{/*	<ProductsSliderByQuery*/}
-			{/*		query={{collection: ['main-page'], sort: 'in_collection'}}*/}
-			{/*		title={'Collection title'}*/}
-			{/*		wrapperClassName='page-block'*/}
-			{/*	/>*/}
-			{/*</div>*/}
+			<div className='container'>
+				<h2 className='page-heading page-heading_h1  page-heading_m-h1'>Products carousel:</h2>
+				<ProductsSliderByQuery
+					query={{collection: ['main-page'], sort: 'in_collection'}}
+					title={'Collection title'}
+					wrapperClassName='page-block'
+				/>
+			</div>
 		</MainLayout>
 	);
 }
