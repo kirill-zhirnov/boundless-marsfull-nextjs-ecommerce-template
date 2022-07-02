@@ -1,9 +1,9 @@
 .mars-logo-row {
 	&__container {
+		align-items: center;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		align-items: center;
 		min-height: 100px;
 	}
 
@@ -13,9 +13,9 @@
 
 	&__logo {
 		display: inline-block;
-		vertical-align: middle;
-		text-decoration: none;
 		margin: 0;
+		text-decoration: none;
+		vertical-align: middle;
 
 		@include media-breakpoint-up(sm) {
 			//span {
@@ -29,11 +29,11 @@
 		}
 
 		span {
-			color: #000000;
-			white-space: nowrap;
+			color: #000;
 			font-family: 'Fira Sans';
-			font-weight: 900;
 			font-size: 32px;
+			font-weight: 900;
+			white-space: nowrap;
 
 			@include media-breakpoint-up(sm) {
 				font-size: 36px;
@@ -42,31 +42,31 @@
 
 		img {
 			display: inline-block;
+			margin-bottom: 10px;
+			margin-top: 10px;
 
 			max-width: 180px;
-			margin-top: 10px;
-			margin-bottom: 10px;
 		}
 	}
 
 	.cart-header {
-		padding: 0;
 		display: flex;
+		padding: 0;
 
 		&__total {
 			display: none;
 		}
 
 		&__qty {
-			width: 50px;
-			height: 50px;
-			position: static;
-			border-radius: 0;
-			background: $front-mars-top-nav-bg;
-			display: inline-flex;
 			align-items: center;
-			justify-content: center;
+			background: $front-mars-top-nav-bg;
+			border-radius: 0;
+			display: inline-flex;
 			font-weight: 400;
+			height: 50px;
+			justify-content: center;
+			position: static;
+			width: 50px;
 		}
 
 		&:hover {
@@ -77,13 +77,13 @@
 	}
 
 	&__cart-icon {
-		width: 50px;
-		height: 50px;
+		align-items: center;
 		background: $theme-color;
 		color: $theme-contrast-color;
 		display: inline-flex;
-		align-items: center;
+		height: 50px;
 		justify-content: center;
+		width: 50px;
 	}
 
 	&__hamburger {
@@ -95,7 +95,7 @@
 	}
 
 	&__at-right {
-		display: flex;
 		align-items: center;
+		display: flex;
 	}
 }

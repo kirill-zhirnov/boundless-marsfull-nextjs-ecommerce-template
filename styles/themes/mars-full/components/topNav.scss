@@ -13,17 +13,17 @@
 	}
 
 	&__contacts {
+		align-items: center;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: flex-start;
-		align-items: center;
 	}
 
 	&__contact {
-		margin: 5px;
-		display: flex;
 		align-items: center;
+		display: flex;
+		margin: 5px;
 	}
 
 	&__contact-icon {
@@ -38,8 +38,8 @@
 
 	&__contact-txt {
 		color: $front-mars-top-nav-txt-color;
-		text-decoration: none;
 		position: relative;
+		text-decoration: none;
 
 		&:hover {
 			color: $front-mars-top-nav-txt-color;
@@ -51,21 +51,21 @@
 		}
 
 		&::before {
-			content: '';
-			position: absolute;
-			width: 0;
-			height: 2px;
-			border-radius: 4px;
-			left: 50%;
-			bottom: -6px;
 			background: $front-mars-top-nav-txt-color;
-			transition: all .35s ease-in-out;
+			border-radius: 4px;
+			bottom: -6px;
+			content: '';
+			height: 2px;
+			left: 50%;
+			position: absolute;
+			transition: all 0.35s ease-in-out;
+			width: 0;
 		}
 	}
 
 	&__menu {
-		margin: 0;
 		display: flex;
+		margin: 0;
 	}
 
 	&__menu-item {
@@ -74,8 +74,8 @@
 
 	&__menu-link {
 		color: $front-mars-top-nav-menu-color;
-		text-decoration: none;
 		position: relative;
+		text-decoration: none;
 
 		&:hover {
 			color: $front-mars-top-nav-menu-color;
@@ -87,15 +87,15 @@
 		}
 
 		&::before {
-			content: '';
-			position: absolute;
-			width: 0;
-			height: 2px;
-			border-radius: 4px;
-			left: 50%;
-			bottom: -6px;
 			background: $front-mars-top-nav-txt-color;
-			transition: all .35s ease-in-out;
+			border-radius: 4px;
+			bottom: -6px;
+			content: '';
+			height: 2px;
+			left: 50%;
+			position: absolute;
+			transition: all 0.35s ease-in-out;
+			width: 0;
 		}
 	}
 }

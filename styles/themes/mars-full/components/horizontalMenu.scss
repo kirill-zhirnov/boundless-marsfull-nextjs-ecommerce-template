@@ -7,9 +7,9 @@
 	//border-top: $horizontal-menu-border;
 
 	&__list {
+		align-items: center;
 		display: flex;
 		margin: 0;
-		align-items: center;
 	}
 
 	&__root-element {
