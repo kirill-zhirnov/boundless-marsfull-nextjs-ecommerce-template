@@ -3,8 +3,8 @@
 	text-align: center;
 
 	&_h1 {
-		@include font-size(2rem);
-		font-weight: $front-font-weight-bold;
+		@include font-size(2.25rem);
+		font-weight: 500;
 	}
 
 	&_m-h1 {
