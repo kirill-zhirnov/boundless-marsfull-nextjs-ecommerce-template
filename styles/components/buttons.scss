@@ -2,8 +2,8 @@
 	@include button-variant($btn-action-bg, $btn-action-border, $btn-action-color);
 
 	&.focus {
-		background-color: #bb3a00;
-		border-color: #551a00;
+		background-color: darken($theme-color, 22%);
+		border-color: darken($theme-color, 64%);
 	}
 
 	&:hover {
