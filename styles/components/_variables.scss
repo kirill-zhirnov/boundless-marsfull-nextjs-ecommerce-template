@@ -1,4 +1,15 @@
-$theme-color: #c490e4 !default;
+// $theme-color: #c490e4 !default;
+$theme-color: #ee4a00;
+$theme-contrast-color: #fff !default;
+
+$front-font-family: 'Roboto', sans-serif !default;
+
+$front-mars-top-nav-bg: #f2f2f2 !default;
+$front-mars-top-nav-txt-color: #4d4d4d !default;
+$front-mars-top-nav-menu-color: #000 !default;
+
+$front-h-menu-bg: $theme-color;
+$front-h-menu-child-bg: #f2f2f2;
 
 $front-text-color: #000 !default;
 $front-link-color: #0d6efd !default;
@@ -6,9 +17,13 @@ $front-link-color: #0d6efd !default;
 $front-font-weight-bold: 700 !default;
 $front-font-weight-light: 300 !default;
 
-$btn-action-color: color-contrast(darken($theme-color, 10%)) !default;
+$btn-action-color: $theme-contrast-color !default;
 $btn-action-bg: $theme-color !default;
-$btn-action-border: #d54200;
+$btn-action-border: darken($theme-color, 10.5%);
+$btn-action-focus-background: darken($theme-color, 21.2%);
+$btn-action-focus-border: darken($theme-color, 64%);
+$btn-action-hover-background: darken($theme-color, 21.2%);
+$btn-action-hover-border: darken($theme-color, 36.4%);
 
 $front-highlight-link-color: $theme-color !default;
 $front-highlighted-price-color: #dc3545 !default;
@@ -25,7 +40,8 @@ $front-bg-color: #f8f8f8 !default;
 $front-category-sidebar-color: $front-text-color !default;
 $front-category-sidebar-hover-color: $front-highlight-link-color !default;
 
-$front-products-border-color: #cfd3da !default;
+// $front-products-border-color: #cfd3da !default;
+$front-products-border-color: #e6e6e6;
 
 $front-error-color: #a94442 !default;
 
@@ -63,3 +79,7 @@ $front-footer-text-color: #000 !default;
 $front-footer-header-weight: 600 !default;
 $front-footer-link-color: #000 !default;
 $front-footer-link-active: $theme-color !default;
+
+
+$horizontal-menu-active-color: #f00 !default;
+$horizontal-menu-open-color: #008000 !default;

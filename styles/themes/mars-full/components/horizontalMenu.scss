@@ -27,12 +27,11 @@
 			--animate-duration: 0.4s;
 		}
 	}
-
 	&.active {
-		color: #f00 !important;
+		color: $horizontal-menu-active-color;
 	}
 
 	&.open {
-		color: #008000 !important;
+		color: $horizontal-menu-open-color;
 	}
 }
