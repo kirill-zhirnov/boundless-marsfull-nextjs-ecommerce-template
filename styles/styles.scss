@@ -2,6 +2,10 @@
 
 $theme-color: #ee4a00;
 
+$btn-action-hover-background: #bb3a00;
+$btn-action-hover-border: #972f00;
+
+
 @import 'functions/stripUnits';
 @import 'mixins/swiperSlideHeight';
 @import 'mixins/fluidType';

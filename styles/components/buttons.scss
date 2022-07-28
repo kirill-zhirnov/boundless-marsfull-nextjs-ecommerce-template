@@ -7,8 +7,8 @@
 	}
 
 	&:hover {
-		background-color: #bb3a00;
-		border-color: #972f00;
+		background-color: $btn-action-hover-background;
+		border-color: $btn-action-hover-border;
 	}
 }
 
