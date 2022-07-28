@@ -1,14 +1,14 @@
 .btn-action {
 	@include button-variant($btn-action-bg, $btn-action-border, $btn-action-color);
 
-	&.focus {
-		background-color: #bb3a00;
-		border-color: #551a00;
+	&:focus {
+		background-color: $btn-action-focus-background;
+		border-color: $btn-action-focus-border;
 	}
 
 	&:hover {
-		background-color: #bb3a00;
-		border-color: #972f00;
+		background-color: $btn-action-hover-background;
+		border-color: $btn-action-hover-border;
 	}
 }
 

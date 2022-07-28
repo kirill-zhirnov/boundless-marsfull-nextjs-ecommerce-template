@@ -3,6 +3,13 @@
 $theme-color: #ee4a00;
 $front-products-border-color: #e6e6e6;
 
+$btn-action-border: #d54200;
+$btn-action-focus-background: #bb3a00;
+$btn-action-focus-border: #551a00;
+$btn-action-hover-background: #bb3a00;
+$btn-action-hover-border: #972f00;
+
+
 @import 'functions/stripUnits';
 @import 'mixins/swiperSlideHeight';
 @import 'mixins/fluidType';
