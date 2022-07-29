@@ -6,6 +6,11 @@
 	//border-bottom: $horizontal-menu-border;
 	//border-top: $horizontal-menu-border;
 
+	@include media-breakpoint-down(md) {
+		display: none;
+	}
+
+
 	&__list {
 		align-items: center;
 		display: flex;

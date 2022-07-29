@@ -29,7 +29,7 @@ export default function MarsTopNav() {
 							<a className='mars-top-nav__menu-link'>Shipping</a>
 						</Link>
 					</li>
-					<li>
+					<li className={'mars-top-nav__menu-item'}>
 						<Link href={'/about'}>
 							<a className='mars-top-nav__menu-link'>About</a>
 						</Link>

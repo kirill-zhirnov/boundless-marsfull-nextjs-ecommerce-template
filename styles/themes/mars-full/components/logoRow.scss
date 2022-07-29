@@ -52,11 +52,19 @@
 	&__welcome {
 		color: $front-mars-top-nav-txt-color;
 		font-size: 0.95rem;
+
+		@include media-breakpoint-down(md) {
+			display: none;
+		}
 	}
 
 	.cart-header {
 		display: flex;
 		padding: 0;
+
+		@include media-breakpoint-down(md) {
+			display: none;
+		}
 
 		&__total {
 			display: none;

@@ -63,6 +63,12 @@
 		}
 	}
 
+	&__note {
+		@include media-breakpoint-down(md) {
+			display:none
+		}
+	}
+
 	&__menu {
 		display: flex;
 		margin: 0;
@@ -70,6 +76,11 @@
 
 	&__menu-item {
 		margin: 0 25px;
+		
+		@include media-breakpoint-down(md) {
+			margin: 0 20px 0 0;
+			line-height: 30px;
+		}
 	}
 
 	&__menu-link {
