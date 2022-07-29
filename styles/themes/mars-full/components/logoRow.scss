@@ -17,17 +17,6 @@
 		text-decoration: none;
 		vertical-align: middle;
 
-		@include media-breakpoint-up(sm) {
-			//span {
-			//	font-size: 36px;
-			//}
-
-			img {
-				max-width: 300px;
-				//max-height: 180px;
-			}
-		}
-
 		span {
 			color: #000;
 			font-family: 'Fira Sans';
@@ -46,6 +35,10 @@
 			margin-top: 10px;
 
 			max-width: 180px;
+
+			@include media-breakpoint-up(sm) {
+				max-width: 300px;
+			}
 		}
 	}
 
