@@ -65,7 +65,7 @@
 
 	&__note {
 		@include media-breakpoint-down(md) {
-			display:none
+			display: none;
 		}
 	}
 
@@ -78,8 +78,8 @@
 		margin: 0 25px;
 		
 		@include media-breakpoint-down(md) {
-			margin: 0 20px 0 0;
 			line-height: 30px;
+			margin: 0 20px 0 0;
 		}
 	}
 
