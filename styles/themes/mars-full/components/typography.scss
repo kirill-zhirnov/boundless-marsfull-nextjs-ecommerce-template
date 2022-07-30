@@ -7,3 +7,34 @@ body {
 	font-family: $front-font-family;
 	font-size: 1rem;
 }
+
+a {
+	background-color: transparent;
+	color: $front-link-color;
+	text-decoration: underline;
+
+	&:hover {
+		color: $front-link-color;
+		text-decoration: none;
+	}
+}
+
+h1 {
+	@include font-size(2.25rem);
+}
+
+h3 {
+	@include font-size(1.625rem);
+}
+
+h4 {
+	@include font-size(1.125rem);
+}
+
+//h5 {
+//	font-size: 0.875rem;
+//}
+//
+//h6 {
+//	font-size: 0.75rem;
+//}
