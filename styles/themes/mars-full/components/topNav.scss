@@ -3,17 +3,25 @@
 	color: $front-mars-top-nav-txt-color;
 	font-size: 0.95rem;
 
+	@include media-breakpoint-down(sm) {
+		padding-bottom: 5px;
+	}
+
 	&__container {
 		align-items: center;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		gap: 10px;
+		gap: 5px 10px;
 		justify-content: space-between;
 		min-height: 50px;
 
 		> * {
 			line-height: 50px;
+
+			@include media-breakpoint-down(sm) {
+				line-height: 30px;
+			}
 		}
 	}
 
@@ -22,7 +30,7 @@
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		gap: 0 10px;
+		gap: 5px 10px;
 		justify-content: flex-start;
 	}
 
