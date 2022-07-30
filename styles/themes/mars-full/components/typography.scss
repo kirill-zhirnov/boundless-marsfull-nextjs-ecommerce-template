@@ -10,11 +10,11 @@ body {
 
 a {
 	background-color: transparent;
-	color: $theme-color;
+	color: $front-link-color;
 	text-decoration: underline;
 
 	&:hover {
-		color: $theme-color;
+		color: $front-link-color;
 		text-decoration: none;
 	}
 }

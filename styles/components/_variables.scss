@@ -11,7 +11,7 @@ $front-h-menu-bg: $theme-color;
 $front-h-menu-child-bg: #f2f2f2;
 
 $front-text-color: #000 !default;
-$front-link-color: #0d6efd !default;
+$front-link-color: $theme-color !default;
 
 $front-font-weight-bold: 700 !default;
 $front-font-weight-light: 300 !default;
