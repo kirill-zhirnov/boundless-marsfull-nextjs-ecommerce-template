@@ -21,7 +21,9 @@ export default function MarsTopNav() {
 					/>
 				</div>
 				<div className={'mars-top-nav__note'}>
-					Opening hours 9 a.m. - 6 p.m. <FontAwesomeIcon icon={faShippingFast} className={'text-theme-color ms-1'} />
+					<p>
+						Opening hours 9 a.m. - 6 p.m. <FontAwesomeIcon icon={faShippingFast} className={'text-theme-color ms-1'} />
+					</p>
 				</div>
 				<ul className={'mars-top-nav__menu list-unstyled'}>
 					<li className={'mars-top-nav__menu-item'}>
