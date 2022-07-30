@@ -3,7 +3,7 @@ import HeaderCart from '../cart/HeaderCart';
 import {useAppDispatch, useAppSelector} from '../../hooks/redux';
 import {MouseEvent} from 'react';
 import {setIsOpened} from '../../redux/reducers/asideMenu';
-import logoImg from '../../assets/Logo_mockup.jpg';
+import logoImg from '../../assets/Logo_mockup_vert.jpg';
 import clsx from 'clsx';
 import {RootState} from '../../redux/store';
 import {faShoppingCart} from '@fortawesome/free-solid-svg-icons/faShoppingCart';
