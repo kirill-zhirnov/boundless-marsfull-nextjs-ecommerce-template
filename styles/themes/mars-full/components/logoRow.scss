@@ -3,12 +3,13 @@
 		align-items: center;
 		display: flex;
 		flex-direction: row;
+		gap: 20px;
 		justify-content: space-between;
 		min-height: 100px;
 	}
 
 	&__logo-wrapper {
-		margin: 0 20px 0 0;
+		margin: 0;
 	}
 
 	&__logo {
@@ -16,17 +17,6 @@
 		margin: 0;
 		text-decoration: none;
 		vertical-align: middle;
-
-		@include media-breakpoint-up(sm) {
-			//span {
-			//	font-size: 36px;
-			//}
-
-			img {
-				max-width: 300px;
-				//max-height: 180px;
-			}
-		}
 
 		span {
 			color: #000;
@@ -46,12 +36,29 @@
 			margin-top: 10px;
 
 			max-width: 180px;
+
+			@include media-breakpoint-up(sm) {
+				max-width: 300px;
+			}
+		}
+	}
+
+	&__welcome {
+		color: $front-mars-top-nav-txt-color;
+		font-size: 0.95rem;
+
+		@include media-breakpoint-down(md) {
+			display: none;
 		}
 	}
 
 	.cart-header {
 		display: flex;
 		padding: 0;
+
+		@include media-breakpoint-down(md) {
+			display: none;
+		}
 
 		&__total {
 			display: none;
