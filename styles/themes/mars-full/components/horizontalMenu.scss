@@ -29,10 +29,10 @@
 	}
 
 	&.active {
-		color: red !important;
+		color: $horizontal-menu-active-color;
 	}
 
 	&.open {
-		color: green !important;
+		color: $horizontal-menu-open-color;
 	}
 }

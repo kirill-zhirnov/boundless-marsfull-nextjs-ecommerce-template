@@ -1,5 +1,15 @@
 .btn-action {
 	@include button-variant($btn-action-bg, $btn-action-border, $btn-action-color);
+
+	&.focus {
+		background-color: darken($theme-color, 21.2%);
+		border-color: darken($theme-color, 64%);
+	}
+
+	&:hover {
+		background-color: darken($theme-color, 21.2%);
+		border-color: darken($theme-color, 36.4%);
+	}
 }
 
 @keyframes move-rhomb {
