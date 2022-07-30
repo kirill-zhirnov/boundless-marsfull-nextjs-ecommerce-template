@@ -23,6 +23,10 @@ export default function ShippingPage({mainMenu, footerMenu}: IShippingPageProps)
 						ullamcorper lacinia feugiat semper, ornare sed vulputate venenatis consequat. Magnis pretium rhoncus est ante
 						auctor gravida diam maecenas porttitor, elementum himenaeos egestas tellus magna aliquet ornare.
 					</p>
+					<h1>What is Lorem Ipsum? (h1)</h1>
+					<p>
+						Facilisi mollis aliquam eget platea felis luctus, mi montes suspendisse volutpat libero dolor a, hac faucibus lectus id amet. Imperdiet sit dapibus nibh parturient adipiscing tellus, ridiculus habitasse aliquet semper eu duis, consequat sociosqu lacinia eros venenatis. Ut augue sed inceptos ante ex feugiat, vitae mollis purus vivamus. Vulputate semper elementum integer conubia himenaeos quisque velit diam, auctor euismod pretium morbi netus pulvinar nec praesent sit, sollicitudin nisl tempor dolor aliquam consequat sagittis.
+					</p>
 					<h2>What is Lorem Ipsum? (h2)</h2>
 					<p>
 						Facilisi mollis aliquam eget platea felis luctus, mi montes suspendisse volutpat libero dolor a, hac faucibus lectus id amet. Imperdiet sit dapibus nibh parturient adipiscing tellus, ridiculus habitasse aliquet semper eu duis, consequat sociosqu lacinia eros venenatis. Ut augue sed inceptos ante ex feugiat, vitae mollis purus vivamus. Vulputate semper elementum integer conubia himenaeos quisque velit diam, auctor euismod pretium morbi netus pulvinar nec praesent sit, sollicitudin nisl tempor dolor aliquam consequat sagittis.
