@@ -45,9 +45,9 @@ $horizontal-menu-border: 1px solid #eee;
 		}
 
 		&.is-child {
+			color: $front-h-menu-color;
 			padding: $horizontal-menu-small-padding $horizontal-menu-big-padding;
 			white-space: nowrap;
-			color: $front-h-menu-color;
 
 			&.is-link:hover {
 				background-color: darken($front-h-menu-child-bg, 5%);
@@ -75,6 +75,7 @@ $horizontal-menu-border: 1px solid #eee;
 
 	&__child-list {
 		background-color: $front-h-menu-child-bg;
+		left: 0;
 		left: 0;
 		margin-top: 15px;
 		position: absolute;
