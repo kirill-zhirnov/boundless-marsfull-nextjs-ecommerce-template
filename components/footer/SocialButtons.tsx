@@ -6,7 +6,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 export default function SocialButtons() {
 	return (
 		<>
-			<h3 className='page-footer__header'>Follow us</h3>
+			{/* <h3 className='page-footer__header'>Follow us</h3> */}
 			<div className='page-footer__social-buttons'>
 				<div className='page-footer__social-button'>
 					<a className='page-footer__social-link' target='_blank' href='https://fb.com'>
@@ -24,7 +24,9 @@ export default function SocialButtons() {
 					</a>
 				</div>
 			</div>
-			<p className='text-muted'>All rights reserved. © Boundless-Commerce</p>
+			<p className='page-footer__social-buttons company-info'>
+				All rights reserved. © Boundless-Commerce
+			</p>
 		</>
 	);
 }

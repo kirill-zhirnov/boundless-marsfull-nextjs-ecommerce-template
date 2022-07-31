@@ -5,7 +5,7 @@ import {IMenuItem} from '../../@types/components';
 export default function FooterMenu({menuList}: {menuList: IMenuItem[]}) {
 	return (
 		<>
-			<h3 className='page-footer__header'>Most popular</h3>
+			{/* <h3 className='page-footer__header'>Most popular</h3> */}
 			<ul className='page-footer-menu list-unstyled' itemScope itemType='//schema.org/ItemList'>
 				{menuList.map((item, i) => (
 					<li

@@ -1,12 +1,13 @@
 .page-footer {
 	background: $front-footer-bg;
 	color: $front-footer-text-color;
-	padding: 45px 0 30px;
+	padding: 35px 0;
 	position: relative;
 	z-index: $zindex-page-layout-children;
 
 	&__item {
 		margin-bottom: 30px;
+		padding: 0 15px;
 		@include media-breakpoint-up(lg) {
 			margin-bottom: 0;
 		}
@@ -22,11 +23,12 @@
 	}
 
 	&__logo {
+		filter: grayscale(1);
 		margin-bottom: 25px;
 	}
 
 	&__company-info {
-		margin-bottom: 25px;
+		margin-bottom: 10px;
 
 		.title {
 			color: $front-footer-text-color;
@@ -34,6 +36,11 @@
 			line-height: 22px;
 			margin-bottom: 0;
 		}
+	}
+
+	&__disclaimer {
+		color: $front-footer-dusclaimer-color;
+		font-size: $small-font-size;
 	}
 
 	&__icon-w-link {
@@ -49,20 +56,24 @@
 		}
 
 		.link {
-			color: $front-footer-link-color;
-			text-decoration: none;
+			color: $theme-contrast-color;
+			text-decoration: underline;
 			transition: all ease-in-out 0.35s;
-
+			
 			&:hover {
-				color: $front-footer-link-active;
-				text-decoration: underline;
+				text-decoration: none;
 			}
 		}
 	}
 
 	&__social-buttons {
 		display: flex;
+		font-size: $font-size-base;
 		margin-bottom: 30px;
+
+		&.company-info {
+			color: $theme-contrast-color;
+		}
 	}
 
 	&__social-button {
@@ -105,12 +116,11 @@
 
 	&__element {
 		&.is-link {
-			color: $front-footer-link-color;
-			text-decoration: none;
-
+			color: $theme-contrast-color;
+			text-decoration: underline;
+			
 			&:hover {
-				color: $front-footer-link-active;
-				text-decoration: underline;
+				text-decoration: none;
 			}
 		}
 	}

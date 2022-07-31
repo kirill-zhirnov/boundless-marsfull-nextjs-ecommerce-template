@@ -6,7 +6,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 export default function FooterContacts() {
 	return (
 		<>
-			<h3 className='page-footer__header'>Contact Us</h3>
+			{/* <h3 className='page-footer__header'>Contact Us</h3> */}
 			<p className='page-footer__icon-w-link'>
 				<span className='icon'>
 					<FontAwesomeIcon icon={faWhatsapp} />
