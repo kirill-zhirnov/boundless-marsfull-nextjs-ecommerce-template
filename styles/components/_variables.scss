@@ -65,8 +65,9 @@ $front-v-menu-active: $theme-color !default;
 $front-h-menu-bg: #fff !default;
 $front-h-menu-child-bg: #fff !default;
 $front-h-menu-color: #000 !default;
+$front-h-menu-border: #df4500 !default;
 $front-h-menu-active: $theme-color !default;
-$front-h-menu-link-weight: 400 !default;
+$front-h-menu-link-weight: $front-font-weight-bold;
 
 $call-to-order-top: 130px !default;
 

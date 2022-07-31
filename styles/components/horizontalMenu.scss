@@ -1,4 +1,5 @@
-$horizontal-menu-big-padding: 15px;
+$vertical-menu-big-padding: 15px;
+$horizontal-menu-big-padding: 20px;
 $horizontal-menu-small-padding: 10px;
 $horizontal-menu-border: 1px solid #eee;
 
@@ -12,12 +13,26 @@ $horizontal-menu-border: 1px solid #eee;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-around;
+		justify-content: flex-start;
 		margin-bottom: 0;
 	}
 
 	&__root-element {
-		padding: $horizontal-menu-big-padding;
+		border-right: 1px solid $front-h-menu-border;
+		padding: $vertical-menu-big-padding $horizontal-menu-big-padding;
 		position: relative;
+
+		&:first-child {
+			border-left: 1px solid $front-h-menu-border;
+		}
+
+		&:hover {
+			background-color: $front-h-menu-child-bg;
+
+			.is-link {
+				color: $front-h-menu-color;
+			}
+		}
 	}
 
 	&__element {
@@ -25,36 +40,27 @@ $horizontal-menu-border: 1px solid #eee;
 		display: flex;
 
 		&.is-link {
-			color: $front-h-menu-color;
+			color: $theme-contrast-color;
 			text-decoration: none;
-
-			&:hover {
-				text-decoration: underline;
-			}
 		}
 
 		&.is-child {
 			padding: $horizontal-menu-small-padding $horizontal-menu-big-padding;
 			white-space: nowrap;
+			color: $front-h-menu-color;
 
 			&.is-link:hover {
 				background-color: darken($front-h-menu-child-bg, 5%);
-				color: $front-h-menu-active;
-				text-decoration: none;
 			}
 		}
 
 		&.is-root {
-			font-size: 15px;
+			font-size: 1rem;
 			font-weight: $front-h-menu-link-weight;
 			text-transform: uppercase;
 
 			.title {
 				line-height: 24px;
-			}
-
-			&.is-link:hover:not(.active) {
-				color: $front-h-menu-color;
 			}
 		}
 
@@ -69,6 +75,7 @@ $horizontal-menu-border: 1px solid #eee;
 
 	&__child-list {
 		background-color: $front-h-menu-child-bg;
+		left: 0;
 		margin-top: 15px;
 		position: absolute;
 		width: 220px;
