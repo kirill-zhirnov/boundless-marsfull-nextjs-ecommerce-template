@@ -46,9 +46,10 @@
 	&__icon-w-link {
 		align-items: center;
 		display: flex;
+		color: $theme-contrast-color;
 
 		.icon {
-			color: $theme-color;
+			color: $theme-contrast-color;
 			display: inline-block;
 			height: 21px;
 			margin-right: 5px;
@@ -85,8 +86,9 @@
 	&__social-link {
 		align-items: center;
 		background: transparent;
-		border: 1px solid $theme-color;
+		border: 1px solid $theme-contrast-color;
 		border-radius: 50%;
+		color: $theme-contrast-color;
 		display: inline-flex;
 		height: 36px;
 		justify-content: center;
@@ -100,7 +102,7 @@
 		}
 
 		.social-icon {
-			color: $theme-color;
+			color: $theme-contrast-color;
 		}
 	}
 }
