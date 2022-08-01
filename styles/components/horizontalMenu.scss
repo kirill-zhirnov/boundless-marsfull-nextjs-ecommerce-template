@@ -19,7 +19,6 @@ $horizontal-menu-border: 1px solid #eee;
 
 	&__root-element {
 		border-right: 1px solid $front-h-menu-border;
-		padding: $vertical-menu-big-padding $horizontal-menu-big-padding;
 		position: relative;
 
 		&:first-child {
@@ -38,6 +37,7 @@ $horizontal-menu-border: 1px solid #eee;
 	&__element {
 		align-items: center;
 		display: flex;
+		padding: $vertical-menu-big-padding $horizontal-menu-big-padding;
 
 		&.is-link {
 			color: $theme-contrast-color;
@@ -52,6 +52,7 @@ $horizontal-menu-border: 1px solid #eee;
 			&.is-link:hover {
 				background-color: darken($front-h-menu-child-bg, 5%);
 				text-decoration: underline;
+				transition: background-color 0.35s;
 			}
 		}
 
@@ -76,8 +77,6 @@ $horizontal-menu-border: 1px solid #eee;
 	&__child-list {
 		background-color: $front-h-menu-child-bg;
 		left: 0;
-		left: 0;
-		margin-top: 15px;
 		position: absolute;
 		width: 220px;
 		z-index: 10;
