@@ -32,6 +32,17 @@ $horizontal-menu-border: 1px solid #eee;
 				color: $front-h-menu-color;
 			}
 		}
+
+		&.active {
+			background-color: $front-h-menu-child-bg;
+			border-left: 1px solid $front-h-menu-child-bg;
+			border-right: 1px solid $front-h-menu-child-bg;
+			color: $front-h-menu-color;
+
+			&.open {
+				color: $theme-contrast-color;
+			}
+		}
 	}
 
 	&__element {
@@ -42,17 +53,21 @@ $horizontal-menu-border: 1px solid #eee;
 		&.is-link {
 			color: $theme-contrast-color;
 			text-decoration: none;
+
+			&.active {
+				color: $front-h-menu-color;
+			}
 		}
 
 		&.is-child {
 			color: $front-h-menu-color;
-			padding: 15px 25px;
-			white-space: nowrap;
+			padding: 15px 14px 15px 25px;
+			// white-space: nowrap;
 
 			&.is-link:hover {
 				background-color: darken($front-h-menu-child-bg, 5%);
-				text-decoration: underline;
-				transition: background-color 0.35s;
+				// text-decoration: underline;
+				transition: background-color 0.3s;
 			}
 		}
 
@@ -64,21 +79,13 @@ $horizontal-menu-border: 1px solid #eee;
 				line-height: 24px;
 			}
 		}
-
-		&.active {
-			color: $front-h-menu-active;
-
-			&:hover {
-				color: $front-h-menu-active;
-			}
-		}
 	}
 
 	&__child-list {
 		background-color: $front-h-menu-child-bg;
 		left: 0;
 		position: absolute;
-		width: 220px;
+		width: 260px;
 		z-index: 10;
 
 		&.animate__animated.animate__fadeInUp,
