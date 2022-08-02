@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import logoImg from '../../assets/logo.svg';
+// import Link from 'next/link';
+// import logoImg from '../../assets/logo.svg';
 
 export default function FooterAbout({companyTitle}: {companyTitle?: string}) {
 	const title = companyTitle || '© Your Company LLC.';

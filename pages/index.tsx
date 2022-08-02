@@ -4,14 +4,14 @@ import ProductsList from '../components/ProductsList';
 import MainLayout from '../layouts/Main';
 import {apiClient} from '../lib/api';
 import {makeAllMenus} from '../lib/menu';
-import VerticalMenu from '../components/VerticalMenu';
+// import VerticalMenu from '../components/VerticalMenu';
 import {IMenuItem} from '../@types/components';
 import SwiperSlider from '../components/SwiperSlider';
 import cliffImg from '../assets/cliff_1.jpg';
 import cliff2Img from '../assets/cliff_2.jpg';
-import CoverTextInCenter from '../components/CoverTextInCenter';
-import bgImg from '../assets/cover-bg.jpeg';
-import bgPortraitImg from '../assets/cover-bg-portrait.jpg';
+// import CoverTextInCenter from '../components/CoverTextInCenter';
+// import bgImg from '../assets/cover-bg.jpeg';
+// import bgPortraitImg from '../assets/cover-bg-portrait.jpg';
 import ProductsSliderByQuery from '../components/ProductsSliderByQuery';
 
 export default function IndexPage({products, mainMenu, footerMenu}: InferGetServerSidePropsType<typeof getServerSideProps>) {
@@ -70,36 +70,36 @@ interface IIndexPageProps {
 	footerMenu: IMenuItem[];
 }
 
-function MainPageSlider() {
-	const slides = [
-		{
-			'img': cliffImg.src,
-			'link': '',
-			'caption': 'Three things cannot be long hidden: The Sun, The Moon, and The Truth.',
-			'captionPosition': 'center',
-			'useFilling': true,
-			'fillingColor': '#000000',
-			'fillingOpacity': 0.40
-		},
-		{
-			'img': cliff2Img.src,
-			'link': '',
-			'caption': 'Pray not for easy lives, pray to be stronger men.',
-			'captionPosition': null,
-			'useFilling': true,
-			'fillingColor': '#000000',
-			'fillingOpacity': 0.4
-		}
-	];
-
-	return (
-		<SwiperSlider
-			showPrevNext
-			roundCorners
-			pagination='progressbar'
-			size={'large'}
-			slides={slides}
-			className={'mb-4'}
-		/>
-	);
-}
+// function MainPageSlider() {
+// 	const slides = [
+// 		{
+// 			'img': cliffImg.src,
+// 			'link': '',
+// 			'caption': 'Three things cannot be long hidden: The Sun, The Moon, and The Truth.',
+// 			'captionPosition': 'center',
+// 			'useFilling': true,
+// 			'fillingColor': '#000000',
+// 			'fillingOpacity': 0.40
+// 		},
+// 		{
+// 			'img': cliff2Img.src,
+// 			'link': '',
+// 			'caption': 'Pray not for easy lives, pray to be stronger men.',
+// 			'captionPosition': null,
+// 			'useFilling': true,
+// 			'fillingColor': '#000000',
+// 			'fillingOpacity': 0.4
+// 		}
+// 	];
+//
+// 	return (
+// 		<SwiperSlider
+// 			showPrevNext
+// 			roundCorners
+// 			pagination='progressbar'
+// 			size={'large'}
+// 			slides={slides}
+// 			className={'mb-4'}
+// 		/>
+// 	);
+// }
