@@ -45,12 +45,11 @@
 
 	&__icon-w-link {
 		align-items: center;
-		color: $theme-contrast-color;
+		color: $front-footer-link-color;
 		display: flex;
-		color: $theme-contrast-color;
 
 		.icon {
-			color: $theme-contrast-color;
+			color: $front-footer-link-color;
 			display: inline-block;
 			height: 21px;
 			margin-right: 5px;
@@ -58,10 +57,10 @@
 		}
 
 		.link {
-			color: $theme-contrast-color;
+			color: $front-footer-link-color;
 			text-decoration: underline;
 			transition: all ease-in-out 0.35s;
-			
+
 			&:hover {
 				text-decoration: none;
 			}
@@ -74,7 +73,7 @@
 		margin-bottom: 30px;
 
 		&.company-info {
-			color: $theme-contrast-color;
+			color: $front-footer-text-color;
 		}
 	}
 
@@ -87,9 +86,9 @@
 	&__social-link {
 		align-items: center;
 		background: transparent;
-		border: 1px solid $theme-contrast-color;
+		border: 1px solid $front-footer-link-color;
 		border-radius: 50%;
-		color: $theme-contrast-color;
+		color: $front-footer-link-color;
 		display: inline-flex;
 		height: 36px;
 		justify-content: center;
@@ -98,12 +97,12 @@
 		width: 36px;
 
 		&:hover {
-			background: #fff;
+			background: darken($front-footer-link-color, 70%);
 			text-decoration: none;
 		}
 
 		.social-icon {
-			color: $theme-contrast-color;
+			color: $front-footer-link-color;
 		}
 	}
 }
@@ -119,9 +118,9 @@
 
 	&__element {
 		&.is-link {
-			color: $theme-contrast-color;
+			color: $front-footer-link-color;
 			text-decoration: underline;
-			
+
 			&:hover {
 				text-decoration: none;
 			}
