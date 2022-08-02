@@ -1,7 +1,7 @@
 .page-footer {
 	background: $front-footer-bg;
 	color: $front-footer-text-color;
-	padding: 35px 0;
+	padding: 45px 0 30px;
 	position: relative;
 	z-index: $zindex-page-layout-children;
 
@@ -15,10 +15,10 @@
 
 	&__header {
 		color: $front-footer-text-color;
-		font-size: 18px;
+		font-size: 1.2rem;
 		font-weight: $front-footer-header-weight;
 		line-height: 1.27;
-		margin: 15px 0 24px;
+		margin: 0 0 24px;
 		padding: 0;
 	}
 
@@ -28,12 +28,12 @@
 	}
 
 	&__company-info {
-		margin-bottom: 10px;
+		margin-bottom: 29px;
 
 		.title {
 			color: $front-footer-link-color;
-			font-size: 15px;
-			line-height: 22px;
+			font-size: 0.9rem;
+			line-height: (22/15);
 			margin-bottom: 0;
 		}
 	}
