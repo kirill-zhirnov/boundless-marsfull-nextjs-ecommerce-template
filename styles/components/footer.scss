@@ -7,6 +7,7 @@
 
 	&__item {
 		margin-bottom: 30px;
+		padding: 0 15px;
 		@include media-breakpoint-up(lg) {
 			margin-bottom: 0;
 		}
@@ -14,34 +15,41 @@
 
 	&__header {
 		color: $front-footer-text-color;
-		font-size: 18px;
+		font-size: 1.2rem;
 		font-weight: $front-footer-header-weight;
 		line-height: 1.27;
-		margin: 15px 0 24px;
+		margin: 0 0 24px;
 		padding: 0;
 	}
 
 	&__logo {
+		filter: grayscale(1);
 		margin-bottom: 25px;
 	}
 
 	&__company-info {
-		margin-bottom: 25px;
+		margin-bottom: 29px;
 
 		.title {
-			color: $front-footer-text-color;
-			font-size: 15px;
-			line-height: 22px;
+			color: $front-footer-link-color;
+			font-size: 0.9rem;
+			line-height: (22/15);
 			margin-bottom: 0;
 		}
 	}
 
+	&__disclaimer {
+		color: $front-footer-dusclaimer-color;
+		font-size: $small-font-size;
+	}
+
 	&__icon-w-link {
 		align-items: center;
+		color: $front-footer-link-color;
 		display: flex;
 
 		.icon {
-			color: $theme-color;
+			color: $front-footer-link-color;
 			display: inline-block;
 			height: 21px;
 			margin-right: 5px;
@@ -50,19 +58,23 @@
 
 		.link {
 			color: $front-footer-link-color;
-			text-decoration: none;
+			text-decoration: underline;
 			transition: all ease-in-out 0.35s;
 
 			&:hover {
-				color: $front-footer-link-active;
-				text-decoration: underline;
+				text-decoration: none;
 			}
 		}
 	}
 
 	&__social-buttons {
 		display: flex;
+		font-size: $font-size-base;
 		margin-bottom: 30px;
+
+		&.company-info {
+			color: $front-footer-text-color;
+		}
 	}
 
 	&__social-button {
@@ -74,8 +86,9 @@
 	&__social-link {
 		align-items: center;
 		background: transparent;
-		border: 1px solid $theme-color;
+		border: 1px solid $front-footer-link-color;
 		border-radius: 50%;
+		color: $front-footer-link-color;
 		display: inline-flex;
 		height: 36px;
 		justify-content: center;
@@ -84,12 +97,12 @@
 		width: 36px;
 
 		&:hover {
-			background: #fff;
+			background: darken($front-footer-link-color, 70%);
 			text-decoration: none;
 		}
 
 		.social-icon {
-			color: $theme-color;
+			color: $front-footer-link-color;
 		}
 	}
 }
@@ -106,11 +119,10 @@
 	&__element {
 		&.is-link {
 			color: $front-footer-link-color;
-			text-decoration: none;
+			text-decoration: underline;
 
 			&:hover {
-				color: $front-footer-link-active;
-				text-decoration: underline;
+				text-decoration: none;
 			}
 		}
 	}

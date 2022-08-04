@@ -4,14 +4,14 @@ import ProductsList from '../components/ProductsList';
 import MainLayout from '../layouts/Main';
 import {apiClient} from '../lib/api';
 import {makeAllMenus} from '../lib/menu';
-import VerticalMenu from '../components/VerticalMenu';
+// import VerticalMenu from '../components/VerticalMenu';
 import {IMenuItem} from '../@types/components';
 import SwiperSlider from '../components/SwiperSlider';
 import cliffImg from '../assets/cliff_1.jpg';
 import cliff2Img from '../assets/cliff_2.jpg';
-import CoverTextInCenter from '../components/CoverTextInCenter';
-import bgImg from '../assets/cover-bg.jpeg';
-import bgPortraitImg from '../assets/cover-bg-portrait.jpg';
+// import CoverTextInCenter from '../components/CoverTextInCenter';
+// import bgImg from '../assets/cover-bg.jpeg';
+// import bgPortraitImg from '../assets/cover-bg-portrait.jpg';
 import ProductsSliderByQuery from '../components/ProductsSliderByQuery';
 
 export default function IndexPage({products, mainMenu, footerMenu}: InferGetServerSidePropsType<typeof getServerSideProps>) {
@@ -70,6 +70,7 @@ interface IIndexPageProps {
 	footerMenu: IMenuItem[];
 }
 
+//eslint-disable-next-line
 function MainPageSlider() {
 	const slides = [
 		{
