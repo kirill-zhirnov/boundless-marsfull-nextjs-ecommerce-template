@@ -2,12 +2,15 @@ $vertical-menu-big-padding: 15px;
 $horizontal-menu-big-padding: 20px;
 $horizontal-menu-small-padding: 10px;
 $horizontal-menu-border: 1px solid #eee;
+$horizontal-menu-active-border-color: #eee;
 
 .horizontal-menu {
 	$root: &;
 	background-color: $front-h-menu-bg;
-	border-bottom: $horizontal-menu-border;
-	border-top: $horizontal-menu-border;
+
+	@include media-breakpoint-down(md) {
+		display: none;
+	}
 
 	&__list {
 		display: flex;
@@ -23,10 +26,15 @@ $horizontal-menu-border: 1px solid #eee;
 
 		&:first-child {
 			border-left: 1px solid $front-h-menu-border;
+
+			&.active {
+				border-left-color: $horizontal-menu-active-border-color;
+			}
 		}
 
 		&:hover {
 			background-color: $front-h-menu-child-bg;
+			border-right-color: $horizontal-menu-active-border-color;
 
 			.is-link {
 				color: $front-h-menu-color;
@@ -35,8 +43,7 @@ $horizontal-menu-border: 1px solid #eee;
 
 		&.active {
 			background-color: $front-h-menu-child-bg;
-			border-left: 1px solid $front-h-menu-child-bg;
-			border-right: 1px solid $front-h-menu-child-bg;
+			border-right-color: $horizontal-menu-active-border-color;
 			color: $front-h-menu-color;
 
 			&.open {
@@ -63,11 +70,11 @@ $horizontal-menu-border: 1px solid #eee;
 			color: $front-h-menu-color;
 			padding: 15px 14px 15px 25px;
 			// white-space: nowrap;
+			transition: all ease-in-out 0.5s;
 
 			&.is-link:hover {
 				background-color: darken($front-h-menu-child-bg, 5%);
 				// text-decoration: underline;
-				transition: background-color 0.3s;
 			}
 		}
 
@@ -78,6 +85,14 @@ $horizontal-menu-border: 1px solid #eee;
 			.title {
 				line-height: 24px;
 			}
+		}
+
+		&.active {
+			color: $theme-color;
+		}
+
+		.title {
+			word-break: break-all;
 		}
 	}
 
@@ -101,5 +116,9 @@ $horizontal-menu-border: 1px solid #eee;
 		&:last-child {
 			border-bottom-width: 1px;
 		}
+	}
+
+	&__text-title {
+		word-break: break-all;
 	}
 }
