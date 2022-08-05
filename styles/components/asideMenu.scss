@@ -67,6 +67,7 @@
 		justify-content: space-between;
 		padding: 15px 15px 15px 20px;
 		text-decoration: none;
+		word-break: break-all;
 
 		&:hover {
 			background-color: darken($front-aside-list-bg, 3%);

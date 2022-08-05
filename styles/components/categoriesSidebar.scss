@@ -1,10 +1,10 @@
 .category-sidebar {
 	background: $front-bg-color;
 	margin-bottom: 1.5rem;
-	padding: 4px 7.5px;
+	padding: 10px 15px;
 
 	@include media-breakpoint-up(xl) {
-		font-size: 1.15rem;
+		//font-size: 1.15rem;
 	}
 
 	&__wrapper {
@@ -59,6 +59,7 @@
 				color: $front-category-sidebar-color;
 				display: inline-block;
 				text-decoration: none;
+				word-break: break-all;
 
 				&::first-letter {
 					text-transform: uppercase;

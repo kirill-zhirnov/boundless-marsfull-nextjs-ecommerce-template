@@ -1,6 +1,7 @@
 .page-heading {
 	position: relative;
 	text-align: center;
+	word-break: break-all;
 
 	&_h1 {
 		@include font-size(2.25rem);

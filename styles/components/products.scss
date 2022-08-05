@@ -1,43 +1,59 @@
-$products-gutter: 10px !default;
+$products-gutter: 20px !default;
 
 .products {
 	align-items: stretch;
 	display: flex;
 	flex-wrap: wrap;
-	margin: 15px var(--bs-gutter-x, -0.75rem);
+	gap: 10px;
+	margin: 0;
 	padding: 0;
+
+	@include media-breakpoint-up(sm) {
+		gap: $products-gutter;
+	}
 
 	&__item {
 		background: #fff;
-		border: 1px solid $front-products-border-color;
-		border-radius: 5px;
+		border: 3px solid $front-products-border-color;
+		border-radius: 0;
 		flex-shrink: 0;
-		margin: $products-gutter;
 		padding: 10px;
 		position: relative;
 		transition: all ease-in-out 0.35s;
 
-		width: calc((100% - (4 * #{$products-gutter})) / 2);
+		width: calc((100% - (1 * 10px)) / 2);
 
-		@include media-breakpoint-up(lg) {
-			width: calc((100% - (6 * #{$products-gutter})) / 3);
+		@include media-breakpoint-up(sm) {
+			width: calc((100% - (1 * #{$products-gutter})) / 2);
 		}
 
-		@include media-breakpoint-up(xl) {
-			width: calc((100% - (8 * #{$products-gutter})) / 4);
+		&_4-in-row {
+			@include media-breakpoint-up(md) {
+				width: calc((100% - (2 * #{$products-gutter})) / 3);
+			}
+
+			@include media-breakpoint-up(lg) {
+				width: calc((100% - (3 * #{$products-gutter})) / 4);
+			}
+		}
+
+		&_3-in-row {
+			@include media-breakpoint-up(md) {
+				width: calc((100% - (2 * #{$products-gutter})) / 3);
+			}
 		}
 
 		&:hover {
-			border-color: transparent;
-			box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+			border-color: $theme-color;
+			//box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
 
-			.products__image {
-				.img {
-					img {
-						transform: scale(1.1);
-					}
-				}
-			}
+			//.products__image {
+			//	.img {
+			//		img {
+			//			transform: scale(1.1);
+			//		}
+			//	}
+			//}
 		}
 	}
 
@@ -51,7 +67,6 @@ $products-gutter: 10px !default;
 	}
 
 	&__title {
-
 		flex-grow: 2;
 		font-size: 0.9rem;
 
@@ -83,18 +98,53 @@ $products-gutter: 10px !default;
 		}
 	}
 
+	&__offer-row {
+		align-items: center;
+		display: flex;
+		gap: 10px;
+	}
+
 	&__offer {
-		margin: 0 0 15px;
+		flex-grow: 1;
+		margin: 0;
 	}
 
 	&__to-cart {
-		align-items: center;
-		display: flex;
-		justify-content: center;
-		min-height: 38px;
+		&_in-stock {
+			flex-shrink: 0;
+		}
+
+		//align-items: center;
+		//display: flex;
+		//justify-content: center;
+		//min-height: 38px;
+
+		&_out-stock {
+			@include media-breakpoint-up(lg) {
+				line-height: 50px;
+				flex-shrink: 0;
+			}
+		}
+	}
+
+	&__to-cart-btn {
+		//@include button-variant($btn-action-bg, $btn-action-bg, $btn-action-color);
+		//background: $btn-action-bg;
+		//border: 0;
+		//color: $btn-action-color;
+		display: block;
+		height: 50px;
+		width: 50px;
+		border-radius: 0;
+		padding: 6px 12px;
+		//&:hover {
+		//	background-color: darken($btn-action-bg, 10%);
+		//}
 	}
 
 	&__price {
+		text-align: left;
+
 		.from {
 			color: $text-muted;
 			display: inline-block;
@@ -103,26 +153,24 @@ $products-gutter: 10px !default;
 		}
 
 		.old {
-
 			color: $text-muted;
 			display: inline-block;
-			font-size: 0.85rem;
+			font-size: 1rem;
 			margin: 0 5px;
 
-			@include media-breakpoint-up(sm) {
-				font-size: 1rem;
+			@include media-breakpoint-up(xl) {
+				font-size: 1.1rem;
 			}
 		}
 
 		.current {
-
 			display: inline-block;
-			font-size: 0.85rem;
+			font-size: 1rem;
 			font-weight: $front-font-weight-bold;
 			margin: 0 5px;
 
-			@include media-breakpoint-up(sm) {
-				font-size: 1rem;
+			@include media-breakpoint-up(xl) {
+				font-size: 1.1rem;
 			}
 
 			&.has-old {
@@ -138,7 +186,7 @@ $products-gutter: 10px !default;
 	}
 
 	.product__label {
-		border-radius: 4px;
+		border-radius: 0;
 		margin: 0 0 6px;
 
 		&:last-child {

@@ -12,6 +12,20 @@
 	}
 }
 
+.btn-to-cart {
+	@include button-variant($btn-action-bg, $btn-action-bg, $btn-action-color);
+
+	&.focus {
+		background-color: darken($theme-color, 21.2%);
+		border-color: darken($theme-color, 64%);
+	}
+
+	&:hover {
+		background-color: darken($theme-color, 21.2%);
+		border-color: darken($theme-color, 36.4%);
+	}
+}
+
 @keyframes move-rhomb {
 	0% { left: 0%; }
 	20% { left: 100%; }

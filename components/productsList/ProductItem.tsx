@@ -14,7 +14,7 @@ import NoImage from '../NoImage';
 import {productImgRatio} from '../../lib/imgs';
 import {TThumbRatio} from '../../@types/image';
 
-export default function ProductItem({product, query, categoryId}: IProductItemProps) {
+export default function ProductItem({product, query, categoryId, className}: IProductItemProps) {
 	const params = {...query};
 	if (categoryId && categoryId !== product.default_category?.category_id) {
 		Object.assign(params, {category: categoryId});
@@ -23,7 +23,10 @@ export default function ProductItem({product, query, categoryId}: IProductItemPr
 
 	return (
 		<li
-			className={clsx('products__item', {'in-stock': product.in_stock, 'out-of-stock': !product.in_stock})}
+			className={clsx('products__item', {
+				'in-stock': product.in_stock,
+				'out-of-stock': !product.in_stock
+			}, className)}
 			data-id={product.product_id}
 			itemScope
 			itemType='//schema.org/Product'
@@ -63,7 +66,7 @@ function Product2Cart({product}: {product: IProduct}) {
 			{product.in_stock
 				? <button
 					type={'button'}
-					className='products__to-cart-btn'
+					className='btn btn-to-cart products__to-cart-btn'
 					onClick={onAddToCart}
 				>
 					<FontAwesomeIcon icon={faCartPlus} />
@@ -126,4 +129,5 @@ interface IProductItemProps {
 	product: IProduct;
 	query: TQuery;
 	categoryId?: number;
+	className?: string;
 }

@@ -86,7 +86,8 @@ export default function CategoryPage({data}: InferGetServerSidePropsType<typeof 
 								products={collection.products}
 								query={productsQuery}
 								categoryId={category.category_id}
-								className={'products_in-category'}
+								className={'products_in-category mt-2 mb-4'}
+								itemClassName={'products__item_3-in-row'}
 							/>
 							<Pagination pagination={collection.pagination} params={productsQuery} onChange={onCollectionChange} />
 						</>}

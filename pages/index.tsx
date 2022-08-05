@@ -17,10 +17,14 @@ import ProductsSliderByQuery from '../components/ProductsSliderByQuery';
 export default function IndexPage({products, mainMenu, footerMenu}: InferGetServerSidePropsType<typeof getServerSideProps>) {
 	return (
 		<MainLayout mainMenu={mainMenu} footerMenu={footerMenu}>
-			<div className='container'>
+			<div className='container-xxl'>
 				{/*<MainPageSlider />*/}
 				<h1 className='page-heading page-heading_h1  page-heading_m-h1'>Boundless store</h1>
-				<ProductsList products={products} query={{}}/>
+				<ProductsList
+					products={products}
+					className={'my-5'}
+					itemClassName={'products__item_4-in-row'}
+				/>
 				{/*<h2 className='page-heading page-heading_h1  page-heading_m-h1'>Cover example:</h2>*/}
 			</div>
 			{/*<CoverTextInCenter*/}

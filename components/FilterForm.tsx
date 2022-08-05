@@ -161,7 +161,7 @@ export default function FilterForm({filterFields, queryParams, categoryId, onSea
 						disabled={isFetching}
 					>Clear</button>
 					<button type='submit'
-						className='btn btn-primary'
+						className='btn btn-action'
 						disabled={!hasChanged || isFetching}
 					>{getSubmitLabel(hasChanged, isFetching, preSearchResult)}</button>
 				</div>
