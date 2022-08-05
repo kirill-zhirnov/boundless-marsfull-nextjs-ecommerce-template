@@ -121,22 +121,22 @@ $products-gutter: 20px !default;
 
 		&_out-stock {
 			@include media-breakpoint-up(lg) {
-				line-height: 50px;
 				flex-shrink: 0;
+				line-height: 50px;
 			}
 		}
 	}
 
 	&__to-cart-btn {
+		border-radius: 0;
 		//@include button-variant($btn-action-bg, $btn-action-bg, $btn-action-color);
 		//background: $btn-action-bg;
 		//border: 0;
 		//color: $btn-action-color;
 		display: block;
 		height: 50px;
-		width: 50px;
-		border-radius: 0;
 		padding: 6px 12px;
+		width: 50px;
 		//&:hover {
 		//	background-color: darken($btn-action-bg, 10%);
 		//}

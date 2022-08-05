@@ -55,6 +55,8 @@
 	.cart-header {
 		display: flex;
 		padding: 0;
+		position: relative;
+		text-decoration: none;
 
 		@include media-breakpoint-down(md) {
 			display: none;
@@ -68,6 +70,7 @@
 			align-items: center;
 			background: $front-mars-top-nav-bg;
 			border-radius: 0;
+			color: $front-mars-top-nav-txt-color;
 			display: inline-flex;
 			font-weight: 400;
 			height: 50px;

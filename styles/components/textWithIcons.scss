@@ -1,0 +1,63 @@
+.text-with-icons {
+	&_bg {
+		background: #f2f2f2;
+		padding: 45px 0;
+	}
+
+	&__columns {
+		display: flex;
+		flex-wrap: wrap;
+
+		gap: 40px;
+		justify-content: flex-start;
+
+		@include media-breakpoint-up(sm) {
+			justify-content: center;
+		}
+
+		@include media-breakpoint-up(lg) {
+			justify-content: flex-start;
+		}
+	}
+
+	&__column {
+		width: 100%;
+		//background: green;
+
+		@include media-breakpoint-up(sm) {
+			width: calc((100% - (1 * 40px)) / 2);
+		}
+
+		@include media-breakpoint-up(lg) {
+			width: calc((100% - (2 * 40px)) / 3);
+		}
+	}
+
+	&__head-wrap {
+		align-items: center;
+		display: flex;
+		gap: 15px;
+		justify-content: center;
+		margin: 0;
+	}
+
+	&__col-title {
+		font-size: 1.32rem;
+		font-weight: normal;
+		margin: 0;
+	}
+
+	&__col-body {
+		color: $text-muted;
+		margin-top: 20px;
+		text-align: center;
+	}
+
+	&__icon-wrap {
+		font-size: 1.95rem;
+	}
+
+	&__icon {
+		color: $theme-color;
+	}
+}

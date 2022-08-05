@@ -18,12 +18,20 @@ Admin-Side For Store Management, Powerful API, And Ready-To-Use Checkout Area.
 
 ## Getting Started
 
-1. Install dependencies: `yarn install`
-2. Generate a permanent token in the Boundless-commerce control panel.
+1. Go to [Boundless-commerce.com](https://boundless-commerce.com/) and create a free account (no credit card required).
+2. Go to "Control panel" -> "Settings" -> "Access tokens" and create a new one: 
+
+![](assets/settings-menu.png)
+![](assets/create-access-token-btn.png)
+
 3. Copy `.env.example` to `.env`
-4. Modify `.env`: put values for the `BOUNDLESS_API_PERMANENT_TOKEN` and `BOUNDLESS_INSTANCE_ID`.
-5. `yarn dev` - to start locally, then open `http://localhost:3000`
-6. If you want to have absolute URLs in the sitemap.xml and OpenGraph meta tags 
+4. Modify `.env`: put values for the `BOUNDLESS_API_PERMANENT_TOKEN` and `BOUNDLESS_INSTANCE_ID`, copy values from:
+
+![](assets/copy-credentials.png)
+
+5. Install dependencies: `yarn install`
+6. `yarn dev` - to start locally, then open `http://localhost:3000`
+7. If you want to have absolute URLs in the sitemap.xml and OpenGraph meta tags 
 you need to also specify `BOUNDLESS_BASE_URL`.
 
 ### Optional parameters
@@ -44,3 +52,10 @@ all necessary meta-tags.
 Shopping cart with a nice animated widget and [Fully customizable React checkout](https://github.com/kirill-zhirnov/boundless-checkout-react).
 
 User friendly mobile version.
+
+## How to modify the theme color?
+
+- Open `styles/styles.scss`
+- Uncomment one of the `$theme-color` variable definitions. You can put own color if you want. All related colors 
+will be adjusted automatically.
+- If you need deeper customization - modify variables in `styles/components/_variables.scss`

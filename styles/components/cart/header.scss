@@ -14,9 +14,9 @@
 	}
 
 	&__qty {
-		background: $front-cart-header-qty-bg;
+		background: $theme-color;
 		border-radius: 13px;
-		color: $front-cart-header-qty-color;
+		color: $theme-contrast-color;
 		display: block;
 		font-weight: $front-font-weight-bold;
 		height: 21px;

@@ -1,0 +1,55 @@
+.reviews {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px;
+	justify-content: flex-start;
+
+	@include media-breakpoint-up(sm) {
+		justify-content: center;
+	}
+
+	@include media-breakpoint-up(lg) {
+		justify-content: flex-start;
+	}
+
+	&__item {
+		width: 100%;
+		//background: green;
+
+		@include media-breakpoint-up(sm) {
+			width: calc((100% - (1 * 40px)) / 2);
+		}
+
+		@include media-breakpoint-up(lg) {
+			width: calc((100% - (2 * 40px)) / 3);
+		}
+	}
+
+	&__img-wrap {
+		margin: 0 0 10px;
+	}
+
+	&__img {
+		border-radius: 50%;
+		display: block;
+		height: auto;
+		margin: 0 auto;
+		width: 150px;
+	}
+
+	&__title {
+		font-weight: 500;
+		margin: 0 0 10px;
+		text-align: center;
+	}
+
+	&__job-title {
+		color: $text-muted;
+		margin: 0 0 10px;
+		text-align: center;
+	}
+
+	&__comment {
+		text-align: center;
+	}
+}
