@@ -1,9 +1,9 @@
-# Next.js Ecommerce template (blank theme) 💻
+# Next.js Ecommerce Mars theme 💻
 
-Ready to use [Next.js](https://nextjs.org) (TypeScript) starter kit for high-performance 
-e-commerce websites 🔥.
+Ready to use [Next.js](https://nextjs.org) (TypeScript) template to create  high-performance
+e-commerce websites.
 
-Free 👍. Ready to use 😎. Just clone & deploy! 🤘
+Ready to use 😎. Just clone & deploy! 🤘
 
 ## Online Demo ⚡️
 
