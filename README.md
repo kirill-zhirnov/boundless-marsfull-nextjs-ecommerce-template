@@ -7,7 +7,7 @@ Ready to use 😎. Just clone & deploy! 🤘
 
 ## Online Demo ⚡️
 
-[blank.demos.boundless-commerce.com](https://blank.demos.boundless-commerce.com/) - deployed to Netlify.
+[mars.demos.my-boundless.app](https://mars.demos.my-boundless.app/) - deployed to Netlify.
 
 ## About Boundless Commerce
 
