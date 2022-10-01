@@ -3,7 +3,7 @@
 Ready to use [Next.js](https://nextjs.org) (TypeScript) template to create  high-performance
 e-commerce websites.
 
-Ready to use 😎. Just clone & deploy! 🤘
+Free 👍. Ready to use 😎. Just clone & deploy! 🤘
 
 ## Online Demo ⚡️
 
