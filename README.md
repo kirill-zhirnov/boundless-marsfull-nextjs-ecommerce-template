@@ -1,4 +1,4 @@
-# Next.js Ecommerce Mars template 💻
+# Next.js E-commerce Mars template 💻
 
 Ready to use [Next.js](https://nextjs.org) (TypeScript) template to create  high-performance
 e-commerce websites.
@@ -43,7 +43,7 @@ the same size. Possible values are: `1-1`, `2-3`, `3-2`,`4-5`, `5-4`, `3-4`, `4-
 
 ## What is included?
 
-Fully ready eCommerce website with a hierarchical catalog, product widgets, 
+Fully ready E-Commerce website with a hierarchical catalog, product widgets, 
 filters, and marketing components like sliders and carousels.
 
 We developed the template keeping SEO in mind: schema markup, sitemap, and 
