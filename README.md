@@ -59,3 +59,7 @@ User friendly mobile version.
 - Uncomment one of the `$theme-color` variable definitions. You can put own color if you want. All related colors 
 will be adjusted automatically.
 - If you need deeper customization - modify variables in `styles/components/_variables.scss`
+
+---
+
+[NextJS eCommerce templates](https://boundless-commerce.com/templates) - Free. Ready to use. Just clone & deploy!
