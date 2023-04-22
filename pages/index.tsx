@@ -19,14 +19,15 @@ import {faShieldAlt} from '@fortawesome/free-solid-svg-icons/faShieldAlt';
 import {faSmile} from '@fortawesome/free-solid-svg-icons/faSmile';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import Reviews from '../components/Reviews';
+import {IBasicSettings} from '../@types/settings';
 
 import reviewWoman1 from '../assets/review-woman-1.jpg';
 import reviewMan1 from '../assets/review-man-1.jpg';
 import reviewMan2 from '../assets/review-man-2.jpg';
 
-export default function IndexPage({products, mainMenu, footerMenu}: InferGetServerSidePropsType<typeof getServerSideProps>) {
+export default function IndexPage({products, mainMenu, footerMenu, basicSettings}: InferGetServerSidePropsType<typeof getServerSideProps>) {
 	return (
-		<MainLayout mainMenu={mainMenu} footerMenu={footerMenu}>
+		<MainLayout mainMenu={mainMenu} footerMenu={footerMenu} basicSettings={basicSettings}>
 			<div className='container-xxl'>
 				<MainPageSlider />
 				<h1 className='page-heading page-heading_h1  page-heading_m-h1'>Boundless store</h1>
@@ -96,12 +97,14 @@ export default function IndexPage({products, mainMenu, footerMenu}: InferGetServ
 export const getServerSideProps: GetServerSideProps<IIndexPageProps> = async () => {
 	const categoryTree = await apiClient.catalog.getCategoryTree({menu: 'category'});
 	const {products} = await apiClient.catalog.getProducts({collection: ['main-page'], sort: 'in_collection'});
+	const basicSettings = await apiClient.system.fetchSettings(['system.locale', 'system.currency']) as IBasicSettings;
 
 	const menus = makeAllMenus({categoryTree});
 
 	return {
 		props: {
 			products,
+			basicSettings,
 			...menus
 		}
 	};
@@ -111,6 +114,7 @@ interface IIndexPageProps {
 	products: IProduct[];
 	mainMenu: IMenuItem[];
 	footerMenu: IMenuItem[];
+	basicSettings: IBasicSettings;
 }
 
 function 	MainPageSlider() {
