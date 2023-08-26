@@ -43,8 +43,8 @@ export default function CategorySidebar({category}: {category: ICategoryItem}) {
 						{item.category_id === category.category_id
 							? <strong>{item.title}</strong>
 							:	<Link href={getCategoryUrl(item)}>
-									<a><FontAwesomeIcon icon={faChevronLeft} size={'xs'} /> {item.title}</a>
-							</Link>
+									<FontAwesomeIcon icon={faChevronLeft} size={'xs'} /> {item.title}
+								</Link>
 						}
 					</li>
 				))}
@@ -63,19 +63,15 @@ export default function CategorySidebar({category}: {category: ICategoryItem}) {
 						>
 							<div itemProp='itemListElement' itemScope itemType='//schema.org/ListItem'>
 								{image &&
-								<Link href={categoryUrl}>
-									<a className={'img-link'}>
-										<img src={image.src}
-												 alt={item.title}
-												 width={image.width}
-												 height={image.height}
-										/>
-									</a>
+								<Link href={categoryUrl} className={'img-link'}>
+									<img src={image.src}
+											 alt={item.title}
+											 width={image.width}
+											 height={image.height}
+									/>
 								</Link>}
-								<Link href={categoryUrl}>
-									<a className={'title'} itemProp='url'>
-										<span itemProp='name'>{item.title}</span>
-									</a>
+								<Link href={categoryUrl} className={'title'} itemProp='url'>
+									<span itemProp='name'>{item.title}</span>
 								</Link>
 								<meta itemProp='position' content={String(i+1)} />
 							</div>

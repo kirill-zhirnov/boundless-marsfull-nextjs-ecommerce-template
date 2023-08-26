@@ -22,14 +22,10 @@ export default function CartRow({item, rmItem, onQtyChange}: ICartRowProps) {
 	return (
 		<div className='cart-item row'>
 			<div className='cart-item__description-col col-md-4'>
-				<Link href={productUrl}>
-					<a className='cart-item__img-link'>
-						{imgElement}
-					</a>
-				</Link>
+				<Link href={productUrl} className='cart-item__img-link'>{imgElement}</Link>
 				<div className='cart-item__title'>
 					<div>
-						<Link href={productUrl}>
+						<Link href={productUrl} legacyBehavior>
 							{item.vwItem?.product?.title || ''}
 						</Link>
 					</div>

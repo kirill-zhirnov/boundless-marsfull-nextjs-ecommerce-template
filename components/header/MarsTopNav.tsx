@@ -27,13 +27,13 @@ export default function MarsTopNav() {
 				</div>
 				<ul className={'mars-top-nav__menu list-unstyled'}>
 					<li className={'mars-top-nav__menu-item'}>
-						<Link href={'/shipping'}>
-							<a className='mars-top-nav__menu-link'>Shipping</a>
+						<Link href={'/shipping'} className='mars-top-nav__menu-link'>
+							Shipping
 						</Link>
 					</li>
 					<li className={'mars-top-nav__menu-item'}>
-						<Link href={'/about'}>
-							<a className='mars-top-nav__menu-link'>About</a>
+						<Link href={'/about'} className='mars-top-nav__menu-link'>
+							About
 						</Link>
 					</li>
 				</ul>

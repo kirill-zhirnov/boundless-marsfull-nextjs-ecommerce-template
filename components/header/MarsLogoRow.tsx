@@ -22,11 +22,9 @@ export default function MarsLogoRow() {
 		<section className={'mars-logo-row'}>
 			<div className={'container-xxl mars-logo-row__container'}>
 				<div className={'mars-logo-row__logo-wrapper'}>
-					<Link href={'/'}>
-						<a className={'mars-logo-row__logo'}>
-							<span>Brand Shop</span>
-							{/* <img src={logoImg.src} alt={'Brand Shop'} /> */}
-						</a>
+					<Link href={'/'} className={'mars-logo-row__logo'}>
+						<span>Brand Shop</span>
+						{/* <img src={logoImg.src} alt={'Brand Shop'} /> */}
 					</Link>
 				</div>
 				<div className={'mars-logo-row__welcome'}>
