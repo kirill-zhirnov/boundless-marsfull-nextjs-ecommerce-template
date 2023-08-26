@@ -13,7 +13,7 @@ export default function AlertWidget() {
 	};
 
 	return (
-		<ToastContainer position={'top-end'} className='mt-3 me-3'>
+		<ToastContainer className={'position-fixed p-3'} position={'top-end'} style={{zIndex: 9999}}>
 			<Toast className={'border-0'} onClose={onClose} show={show} delay={3000} autohide bg={type} >
 				<Toast.Body>
 					<div className='d-flex'>
