@@ -23,7 +23,7 @@ export default function MarsLogoRow() {
 			<div className={'container-xxl mars-logo-row__container'}>
 				<div className={'mars-logo-row__logo-wrapper'}>
 					<Link href={'/'} className={'mars-logo-row__logo'}>
-						<span>Katalon Cellphone Shop</span>
+						<span>K Cellphone Shop</span>
 						{/* <img src={logoImg.src} alt={'Brand Shop'} /> */}
 					</Link>
 				</div>
