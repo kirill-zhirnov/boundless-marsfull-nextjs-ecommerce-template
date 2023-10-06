@@ -122,7 +122,7 @@ function 	MainPageSlider() {
 		{
 			'img': mobileSlider1Img.src,
 			'link': '',
-			'caption': 'Decorate your phone with our cases!',
+			'caption': 'We sell everything you need!',
 			'captionPosition': 'bottom',
 			'useFilling': true,
 			'fillingColor': '#000000',
