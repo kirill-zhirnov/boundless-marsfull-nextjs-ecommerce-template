@@ -2,7 +2,7 @@
 // import logoImg from '../../assets/logo.svg';
 
 export default function FooterAbout({companyTitle}: {companyTitle?: string}) {
-	const title = companyTitle || '© Your Company LLC.';
+	const title = companyTitle || '© K Company LLC';
 	return (
 		<>
 			{/* <div className='page-footer__logo'>

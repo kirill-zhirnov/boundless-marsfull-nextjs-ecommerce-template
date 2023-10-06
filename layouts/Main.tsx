@@ -46,12 +46,12 @@ export default function MainLayout({children, title, metaData, mainMenu, footerM
 				<meta name='theme-color' content='#ffffff' />
 
 				<meta property='og:type' content='website' />
-				<meta property='og:title' content={title || 'Boundless-Commerce Shop Example'} />
+				<meta property='og:title' content={title || 'Cellphone Shop'} />
 				<meta property='og:url' content={canonicalUrl || shopBaseUrl} />
 				<meta property='og:image' content={imgUrl || (shopBaseUrl + '/og.jpeg')} />
 				{description && <meta property='og:description' content={description} />}
 
-				<title>{title || 'Boundless-Commerce Shop Example'}</title>
+				<title>{title || 'Cellphone Shop'}</title>
 
 				<link rel='preconnect' href={process.env.BOUNDLESS_API_BASE_URL || 'https://api.boundless-commerce.com'} crossOrigin={'use-credentials'} />
 				{noIndex && <meta name='robots' content='noindex' />}
