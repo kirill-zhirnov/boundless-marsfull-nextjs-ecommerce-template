@@ -7,8 +7,8 @@ import {makeAllMenus} from '../lib/menu';
 // import VerticalMenu from '../components/VerticalMenu';
 import {IMenuItem} from '../@types/components';
 import SwiperSlider from '../components/SwiperSlider';
-import mobileSlider1Img from '../assets/mobile-slider-1.png';
-import mobileSlider2Img from '../assets/mobile-slider-2.png';
+import bannerSamsung from '../assets/banner-samsung.png';
+import bannerIphone from '../assets/banner-iphone.png';
 // import CoverTextInCenter from '../components/CoverTextInCenter';
 // import bgImg from '../assets/cover-bg.jpeg';
 // import bgPortraitImg from '../assets/cover-bg-portrait.jpg';
@@ -120,18 +120,18 @@ interface IIndexPageProps {
 function 	MainPageSlider() {
 	const slides = [
 		{
-			'img': mobileSlider1Img.src,
+			'img': bannerIphone.src,
 			'link': '',
-			'caption': 'We sell everything you need!',
+			'caption': '',
 			'captionPosition': 'bottom',
 			'useFilling': true,
 			'fillingColor': '#000000',
 			'fillingOpacity': 0.40
 		},
 		{
-			'img': mobileSlider2Img.src,
+			'img': bannerSamsung.src,
 			'link': '',
-			'caption': 'Pray not for easy lives, pray to be stronger men.',
+			'caption': '',
 			'captionPosition': 'bottom',
 			'useFilling': true,
 			'fillingColor': '#000000',
