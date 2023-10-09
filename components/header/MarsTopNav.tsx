@@ -27,11 +27,6 @@ export default function MarsTopNav() {
 				</div>
 				<ul className={'mars-top-nav__menu list-unstyled'}>
 					<li className={'mars-top-nav__menu-item'}>
-						<Link href={'/shipping'} className='mars-top-nav__menu-link'>
-							Shipping
-						</Link>
-					</li>
-					<li className={'mars-top-nav__menu-item'}>
 						<Link href={'/about'} className='mars-top-nav__menu-link'>
 							About
 						</Link>

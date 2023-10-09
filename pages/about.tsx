@@ -11,18 +11,7 @@ export default function ShippingPage({mainMenu, footerMenu}: IPageProps) {
 				<h1 className='page-heading page-heading_h1  page-heading_m-h1'>About</h1>
 				<div className='text-container'>
 					<p>
-						Lorem ipsum dolor sit amet consectetur adipiscing elit semper penatibus purus, neque sodales fames
-						pellentesque luctus fringilla libero dis ornare cursus sociosqu, elementum commodo efficitur mauris dictum
-						tortor per ultricies a. Venenatis turpis eleifend proin a dapibus ullamcorper conubia odio vel, porta nulla
-						gravida habitasse facilisi quisque class non aliquam velit, donec nostra amet ante montes ad varius mauris.
-						Maecenas urna laoreet sociosqu tempus rutrum quis ad diam, habitant morbi augue ornare orci a suscipit faucibus,
-						felis nostra senectus at mollis et gravida. Tempus nulla nec etiam mollis, duis lacinia dictum netus,
-						dignissim mi facilisis. Euismod gravida mollis integer class convallis lacinia ad, elit id pharetra ac
-						bibendum iaculis augue lorem, purus at scelerisque posuere dictumst dis. Risus eleifend maecenas cras ac
-						conubia proin nisl, ultrices mollis sem et molestie dolor facilisis, venenatis neque eget maximus quis per.
-						Ante vehicula interdum pulvinar sodales faucibus, metus dignissim orci habitasse. Id dui in amet vehicula luctus
-						lobortis facilisi gravida dis litora diam sapien eget, tortor semper erat turpis pretium odio tempor porta
-						vestibulum mauris congue.
+						Welcome to our online phone store! We're here to offer you the latest and best phones. We love technology, just like you do, and we want to help you stay connected with the latest gadgets. Our goal is to give you a carefully chosen selection of the newest mobile phones from top brands. Whether you're a busy worker, a social media fan, or just need a good phone, we've got what you need. Take a look at the phones and enjoy the future of staying in touch.
 					</p>
 				</div>
 			</div>

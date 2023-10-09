@@ -32,8 +32,13 @@ export default function ProductItem({product, query, categoryId, className}: IPr
 			itemType='//schema.org/Product'
 		>
 			<div className='products__item-wrapper'>
-				<ProductImage product={product}
-											productUrl={productUrl} />
+				<div style={{
+					minHeight: '300px'
+				}}>
+					<ProductImage product={product}
+												productUrl={productUrl} />
+				</div>
+
 				<h4 className='products__title'>
 					<Link href={productUrl} itemProp='url'>
 						<span itemProp='name'>{product.title}</span>

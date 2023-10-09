@@ -17,7 +17,7 @@ export default function FooterContacts() {
 				<span className='icon'>
 					<FontAwesomeIcon icon={faMapMarkerAlt}/>
 				</span>
-				<a className='link' href='#'>1 infinite loop, Cupertino, CA 95014</a>
+				<a className='link' href='#'>1 John Doe, Cupertino, CA 95014</a>
 			</p>
 			<p className='page-footer__icon-w-link'>
 				<span className='icon'>

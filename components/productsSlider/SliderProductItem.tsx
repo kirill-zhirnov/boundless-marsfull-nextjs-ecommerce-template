@@ -22,10 +22,14 @@ export default function SliderProductItem({product}: {product: IProduct}) {
 			data-id={product.product_id}
 		>
 			<div className='products-slider__product-wrapper'>
-				<ProductImage
-					product={product}
-					productUrl={productUrl}
-				/>
+				<div style={{
+					minHeight: '200px'
+				}}>
+					<ProductImage
+						product={product}
+						productUrl={productUrl}
+					/>
+				</div>
 				<h4 className='products-slider__product-title'>
 					<Link href={productUrl}>
 						{product.title}
