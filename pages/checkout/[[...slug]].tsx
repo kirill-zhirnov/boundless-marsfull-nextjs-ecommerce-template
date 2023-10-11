@@ -4,7 +4,7 @@ import {useRouter} from 'next/router';
 import {apiClient} from '../../lib/api';
 import {TCartInited} from '../../redux/reducers/cart';
 import Loader from '../../components/Loader';
-import logoImg from '../../assets/logo.svg';
+import logoImg from '../../assets/logo.png';
 import Head from 'next/head';
 import {useCallback, useEffect, useRef} from 'react';
 import {createGetStr} from 'boundless-api-client/utils';
