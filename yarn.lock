@@ -299,10 +299,10 @@
   dependencies:
     prop-types "^15.7.2"
 
-"@hohuyhoangg/boundless-checkout-react-custom@^1.2.7":
-  version "1.2.7"
-  resolved "https://registry.yarnpkg.com/@hohuyhoangg/boundless-checkout-react-custom/-/boundless-checkout-react-custom-1.2.7.tgz#e9bae937638826c9637813affe0a465e2594ea21"
-  integrity sha512-IxEfplBQ4sXfSYWKrE+HUvRH3SAp2C6wNnBdSVn9q35Ev8VCOrRlz1PrjFggpPU4+MIxE1ewpAjRX379a/fexw==
+"@hohuyhoangg/boundless-checkout-react-custom@^1.2.8":
+  version "1.2.8"
+  resolved "https://registry.yarnpkg.com/@hohuyhoangg/boundless-checkout-react-custom/-/boundless-checkout-react-custom-1.2.8.tgz#9c57cbde32d39556fcff26f4f0a8261b63ffa09a"
+  integrity sha512-fgiY83r/0FIGAWRawYH+TJfNK1qJ7GU2piWPdk8uN+BAOpBy3zqye/EpM5l1ZUJvFSX9diIQI3VlhqHvCbQj8w==
   dependencies:
     "@emotion/react" "^11.11.1"
     "@emotion/styled" "^11.11.0"
