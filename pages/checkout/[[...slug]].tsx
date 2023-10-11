@@ -1,5 +1,5 @@
 import {useCart} from '../../hooks/cart';
-import {startCheckout, StarterWrapper, resetCheckoutState} from 'boundless-checkout-react';
+import {startCheckout, StarterWrapper, resetCheckoutState} from '@hohuyhoangg/boundless-checkout-react-custom';
 import {useRouter} from 'next/router';
 import {apiClient} from '../../lib/api';
 import {TCartInited} from '../../redux/reducers/cart';
