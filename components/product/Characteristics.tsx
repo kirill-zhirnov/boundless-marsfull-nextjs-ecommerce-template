@@ -5,7 +5,7 @@ import Manufacturer from './characteristics/Manufacturer';
 import SizeAndWeight from './characteristics/SizeAndWeight';
 
 export default function ProductCharacteristics({characteristics, manufacturer, size}: IProductCharacteristicsProps) {
-	if (!characteristics.length) return null;
+	if (!characteristics?.length) return null;
 
 	return (
 		<div className='product-attrs'>
