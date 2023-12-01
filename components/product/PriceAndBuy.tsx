@@ -79,6 +79,7 @@ export default function ProductPriceAndBuy({product, selectedVariant, setError, 
 					<button type={'button'}
 						className={'btn btn-action btn-anim btn-lg'}
 						onClick={onBuyBtnClicked}
+						title='Buy'
 					>
 						<FontAwesomeIcon icon={faCartPlus} /> Buy
 					</button>
@@ -113,6 +114,7 @@ const PriceAndBuyQty = ({qty, setQty}: {qty: number, setQty: (value: number) => 
 			<button type={'button'}
 				className={'btn btn-outline-secondary text-center'}
 				onClick={onBtnClicked.bind(null, -1)}
+				title='Decreased'
 			>
 				<FontAwesomeIcon icon={faMinus} />
 			</button>
@@ -125,6 +127,7 @@ const PriceAndBuyQty = ({qty, setQty}: {qty: number, setQty: (value: number) => 
 			<button type={'button'}
 				className={'btn btn-outline-secondary text-center'}
 				onClick={onBtnClicked.bind(null, 1)}
+				title='Increased'
 			>
 				<FontAwesomeIcon icon={faPlus} />
 			</button>

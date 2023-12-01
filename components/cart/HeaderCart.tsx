@@ -11,7 +11,7 @@ export default function HeaderCart({className, icon}: {className?: string, icon?
 	const isDoubleQty = (total?.qty && total?.qty > 9) ? true : false;
 
 	return (
-		<Link href={'/cart'} className={clsx('cart-header', {
+		<Link title='Go to cart' href={'/cart'} className={clsx('cart-header', {
 			'cart-header_empty': isEmpty,
 			'cart-header_active': !isEmpty
 		}, className)}>

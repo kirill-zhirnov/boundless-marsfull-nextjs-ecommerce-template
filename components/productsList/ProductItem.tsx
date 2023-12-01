@@ -71,6 +71,7 @@ function Product2Cart({product}: {product: IProduct}) {
 					type={'button'}
 					className='btn btn-to-cart products__to-cart-btn'
 					onClick={onAddToCart}
+					title='Add to cart'
 				>
 					<FontAwesomeIcon icon={faCartPlus} />
 				</button>

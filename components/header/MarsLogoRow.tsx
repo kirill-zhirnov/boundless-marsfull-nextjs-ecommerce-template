@@ -31,7 +31,7 @@ export default function MarsLogoRow() {
 					Welcome to our shop. We are working for you!
 				</div>
 				<div className={'mars-logo-row__at-right'}>
-					<HeaderCart icon={<span className={'mars-logo-row__cart-icon'}><FontAwesomeIcon icon={faShoppingCart} /></span>}/>
+					<HeaderCart icon={<span title='Go to cart' className={'mars-logo-row__cart-icon'}><FontAwesomeIcon icon={faShoppingCart} /></span>}/>
 					<button type={'button'}
 									className={'hamburger-btn mars-logo-row__hamburger'}
 									onClick={onHamburgerBtnClicked}

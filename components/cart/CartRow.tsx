@@ -45,6 +45,7 @@ export default function CartRow({item, rmItem, onQtyChange}: ICartRowProps) {
 						style={{width: 25}}
 						disabled={item.qty < 2}
 						onClick={() => onQtyChange(item.qty - 1)}
+						title='Decreased'
 					><>&ndash;</></button>
 					<input
 						type='number'
@@ -59,6 +60,7 @@ export default function CartRow({item, rmItem, onQtyChange}: ICartRowProps) {
 						type='button'
 						style={{width: 25}}
 						onClick={() => onQtyChange(item.qty + 1)}
+						title='Increased'
 					>+</button>
 				</div>
 			</div>
